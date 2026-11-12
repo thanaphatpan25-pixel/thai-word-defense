@@ -38,7 +38,7 @@ test('save system falls back to classic when the selected skin is not unlocked',
 test('save system migrates older version-one data to the classic skin', () => {
   const storage = new MemoryStorage() as unknown as Storage;
   const legacy = structuredClone(DEFAULT_SAVE) as typeof DEFAULT_SAVE & { selectedSkin?: string };
-  delete legacy.selectedSkin;
+  Reflect.deleteProperty(legacy, 'selectedSkin');
   storage.setItem('thai-word-defense-save-v1', JSON.stringify(legacy));
   assert.equal(new SaveSystem(storage).load().selectedSkin, 'classic');
 });
