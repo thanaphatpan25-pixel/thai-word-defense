@@ -1,6 +1,5 @@
 import { readFile } from 'node:fs/promises';
 import { readdir } from 'node:fs/promises';
-import { join } from 'node:path';
 
 const directory = new URL('../src/data/questions/', import.meta.url);
 const files = (await readdir(directory)).filter((file) => file.endsWith('.json')).sort();
