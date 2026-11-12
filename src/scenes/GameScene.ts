@@ -1,283 +1,330 @@
 import Phaser from 'phaser';
-import type { ZombieType } from '../data/zombies';
-import type { GameSimulation } from '../systems/GameSimulation';
-import { CELL_SIZE, GRID_COLUMNS, GRID_ROWS } from '../systems/GridSystem';
+import { ART_KEYS, resolveEntityFrame } from '../assets/gameArt';
 import {
-  towerAnimationKey,
-  towerFrameKey,
-  zombieAnimationKey,
-  zombieFrameKey,
-} from '../assets/gameArt';
-import { getZombieDisplaySize, RENDER_TUNING } from '../assets/renderTuning';
+  computeCoverScale,
+  computeProceduralMotion,
+  drawCrispHealthBar,
+  getUnitRenderTuning,
+  PROJECTILE_TUNING,
+} from '../assets/renderTuning';
+import { getOptimalResolution } from '../main';
 
-const WORLD_WIDTH = GRID_COLUMNS * CELL_SIZE;
-const WORLD_HEIGHT = GRID_ROWS * CELL_SIZE;
-const SCHOOL_X = WORLD_WIDTH - 90;
-const SCHOOL_BASE_Y = 340;
+export interface RenderableEntityState {
+  id: number;
+  typeKey: string;
+  category: 'tower' | 'zombie' | 'boss';
+  x: number;
+  y: number;
+  hp: number;
+  maxHp: number;
+  range?: number;
+  isMoving?: boolean;
+  hitFlashRemainingMs?: number;
+  isSlowed?: boolean;
+}
 
-type TowerView = {
-  container: Phaser.GameObjects.Container;
-  sprite: Phaser.GameObjects.Sprite;
-  levelBadge: Phaser.GameObjects.Text;
-  level: number;
-};
+export interface RenderableProjectileState {
+  id: number;
+  frameKey: string;
+  x: number;
+  y: number;
+  rotation: number;
+}
+
+interface FloatingCombatText {
+  textObj: Phaser.GameObjects.Text;
+  vy: number;
+  elapsedMs: number;
+  durationMs: number;
+}
 
 export class GameScene extends Phaser.Scene {
-  simulation?: GameSimulation;
-  onGridClick?: (x: number, y: number) => void;
+  private backgroundImg?: Phaser.GameObjects.Image;
+  private gridGraphics?: Phaser.GameObjects.Graphics;
+  private shadowGraphics?: Phaser.GameObjects.Graphics;
+  private healthBarGraphics?: Phaser.GameObjects.Graphics;
 
-  private readonly zombieViews = new Map<string, Phaser.GameObjects.Sprite>();
-  private readonly zombieLabels = new Map<string, Phaser.GameObjects.Text>();
-  private readonly zombieTypes = new Map<string, ZombieType>();
-  private readonly zombieHp = new Map<string, number>();
-  private readonly zombiePreviousX = new Map<string, number>();
-  private readonly towerViews = new Map<string, TowerView>();
-  private projectileGraphics?: Phaser.GameObjects.Graphics;
+  private unitSprites = new Map<number, Phaser.GameObjects.Sprite>();
+  private projectileSprites = new Map<number, Phaser.GameObjects.Sprite>();
+  private floatingTexts: FloatingCombatText[] = [];
+
+  // พิกัดช่องตารางที่เมาส์กำลังชี้อยู่สำหรับแสดง Preview ก่อนวางป้อม
+  private hoveredCell: {
+    x: number;
+    y: number;
+    width: number;
+    height: number;
+    canPlace: boolean;
+    previewRange?: number;
+  } | null = null;
 
   constructor() {
-    super('Game');
+    super({ key: 'GameScene' });
   }
 
-  init(data?: object): void {
-    const payload = data as { simulation?: GameSimulation } | undefined;
-    this.simulation = payload?.simulation;
+  public create(): void {
+    const { width, height } = this.scale;
+
+    // 1. วาดพื้นหลังสนามรบแบบ Cover Scale (ไม่บี้/ไม่ยืด) และดรอปแสงเล็กน้อยให้ป้อมและซอมบี้เด่นขึ้น
+    if (this.textures.exists(ART_KEYS.BATTLEFIELD_BG)) {
+      this.backgroundImg = this.add.image(width / 2, height / 2, ART_KEYS.BATTLEFIELD_BG);
+      const scale = computeCoverScale(
+        this.backgroundImg.width,
+        this.backgroundImg.height,
+        width,
+        height
+      );
+      this.backgroundImg.setScale(scale);
+      this.backgroundImg.setTint(0xe2e8f0);
+      this.backgroundImg.setDepth(0);
+    }
+
+    // 2. เลเยอร์ตารางสนามรบและเงาใต้เท้า
+    this.gridGraphics = this.add.graphics().setDepth(5);
+    this.shadowGraphics = this.add.graphics().setDepth(10);
+    this.healthBarGraphics = this.add.graphics().setDepth(2000);
+
+    this.scale.on('resize', this.handleResize, this);
   }
 
-  create(): void {
-    // Stop the menu canvas explicitly so its school icon cannot remain underneath the game scene.
-    if (this.scene.isActive('Menu')) this.scene.stop('Menu');
-    this.cameras.main.setBackgroundColor('#82954d');
-    this.cameras.main.setBounds(0, 0, WORLD_WIDTH, WORLD_HEIGHT);
-    // The existing battlefield is 377×232; nearest-neighbour 2× keeps the route aligned to the grid.
-    this.add
-      .image(WORLD_WIDTH / 2, WORLD_HEIGHT / 2, 'battlefield')
-      .setOrigin(0.5)
-      .setScale(2)
-      .setDepth(0);
+  private handleResize(gameSize: Phaser.Structs.Size): void {
+    if (!this.backgroundImg) return;
+    const width = gameSize.width;
+    const height = gameSize.height;
+    this.backgroundImg.setPosition(width / 2, height / 2);
+    const scale = computeCoverScale(
+      this.backgroundImg.width,
+      this.backgroundImg.height,
+      width,
+      height
+    );
+    this.backgroundImg.setScale(scale);
+  }
 
-    this.add
-      .ellipse(SCHOOL_X, SCHOOL_BASE_Y - 4, 120, 22, 0x263222, 0.32)
-      .setDepth(1);
-    this.add
-      .image(SCHOOL_X, SCHOOL_BASE_Y, 'schoolLibrary')
-      .setOrigin(0.5, 1)
-      .setScale(RENDER_TUNING.schoolScale)
-      .setDepth(2);
-    this.add
-      .text(SCHOOL_X, SCHOOL_BASE_Y + 4, 'ห้องสมุด', {
-        fontFamily: 'K2D, Tahoma, sans-serif',
-        fontSize: '13px',
+  /**
+   * อัปเดตตำแหน่งช่องตารางที่เมาส์ชี้เพื่อวาดกรอบไฮไลต์และวงรัศมีโจมตีของป้อม
+   */
+  public setHoveredCellPreview(
+    cell: {
+      x: number;
+      y: number;
+      width: number;
+      height: number;
+      canPlace: boolean;
+      previewRange?: number;
+    } | null
+  ): void {
+    this.hoveredCell = cell;
+  }
+
+  /**
+   * แสดงตัวเลขดาเมจหรือข้อความแจ้งเตือนลอยขึ้นเหนือเป้าหมายอย่างคมชัด
+   */
+  public spawnFloatingText(
+    x: number,
+    y: number,
+    message: string,
+    color: string = '#fbbf24',
+    isCritical: boolean = false
+  ): void {
+    const dpr = getOptimalResolution();
+    const textObj = this.add
+      .text(x, y, message, {
+        fontFamily: '"Kanit", "Sarabun", sans-serif',
+        fontSize: isCritical ? '24px' : '19px',
         fontStyle: 'bold',
-        color: '#fff4db',
-        backgroundColor: '#263b32',
-        padding: { x: 6, y: 3 },
-        stroke: '#17251f',
-        strokeThickness: 2,
+        color,
+        stroke: '#090d16',
+        strokeThickness: 4,
+        resolution: dpr,
+        padding: { top: 8, bottom: 6, left: 4, right: 4 },
       })
-      .setOrigin(0.5, 0)
-      .setDepth(3);
+      .setOrigin(0.5)
+      .setDepth(2500);
 
-    this.projectileGraphics = this.add.graphics().setDepth(10);
-    this.input.on('pointerdown', (pointer: Phaser.Input.Pointer) => {
-      if (!this.simulation || this.simulation.phase !== 'playing') return;
-      const worldPoint = this.cameras.main.getWorldPoint(pointer.x, pointer.y);
-      const gridX = Math.floor(worldPoint.x / CELL_SIZE);
-      const gridY = Math.floor(worldPoint.y / CELL_SIZE);
-      this.onGridClick?.(gridX, gridY);
+    this.floatingTexts.push({
+      textObj,
+      vy: isCritical ? -52 : -38,
+      elapsedMs: 0,
+      durationMs: 750,
     });
-
-    this.scale.on('resize', () => this.cameras.main.centerOn(WORLD_WIDTH / 2, WORLD_HEIGHT / 2));
-    this.events.once(Phaser.Scenes.Events.SHUTDOWN, this.clearViews, this);
   }
 
-  update(_time: number, delta: number): void {
-    if (!this.simulation) return;
-    this.simulation.update(delta);
-    this.syncTowers();
-    this.syncZombies();
-    this.syncProjectiles();
+  /**
+   * ซิงค์ข้อมูลจาก GameSimulation มาวาดลงบนฉากพร้อมเงา แอนิเมชัน และหลอดเลือด
+   */
+  public syncVisualState(
+    entities: RenderableEntityState[],
+    projectiles: RenderableProjectileState[],
+    gridCells: Array<{ x: number; y: number; width: number; height: number }>,
+    timeMs: number,
+    dtMs: number
+  ): void {
+    this.drawBattlefieldGrid(gridCells);
+    this.syncEntities(entities, timeMs);
+    this.syncProjectiles(projectiles);
+    this.updateFloatingTexts(dtMs);
   }
 
-  private clearViews(): void {
-    for (const view of this.towerViews.values()) view.container.destroy(true);
-    for (const sprite of this.zombieViews.values()) sprite.destroy();
-    for (const label of this.zombieLabels.values()) label.destroy();
-    this.towerViews.clear();
-    this.zombieViews.clear();
-    this.zombieLabels.clear();
-    this.zombieTypes.clear();
-    this.zombieHp.clear();
-    this.zombiePreviousX.clear();
-  }
+  private drawBattlefieldGrid(
+    cells: Array<{ x: number; y: number; width: number; height: number }>
+  ): void {
+    if (!this.gridGraphics) return;
+    this.gridGraphics.clear();
 
-  private syncTowers(): void {
-    const simulation = this.simulation;
-    if (!simulation) return;
-
-    const activeIds = new Set(simulation.towers.map((tower) => tower.id));
-    for (const [id, view] of this.towerViews) {
-      if (activeIds.has(id)) continue;
-      view.container.destroy(true);
-      this.towerViews.delete(id);
+    // วาดเส้นตารางแบบโปร่งแสงกลมกลืนกับฉาก
+    this.gridGraphics.lineStyle(1, 0xf8fafc, 0.11);
+    for (const cell of cells) {
+      this.gridGraphics.strokeRoundedRect(
+        cell.x + 2,
+        cell.y + 2,
+        cell.width - 4,
+        cell.height - 4,
+        8
+      );
     }
 
-    const skinColors: Record<string, number> = {
-      classic: 0xffdc75,
-      mint: 0x9de2b4,
-      sunset: 0xffa6c9,
-    };
-    const accent = skinColors[simulation.saveData.selectedSkin] ?? skinColors.classic!;
+    // วาดช่องที่เมาส์กำลังชี้และวงรัศมีโจมตีของป้อม
+    if (this.hoveredCell) {
+      const { x, y, width, height, canPlace, previewRange } = this.hoveredCell;
+      const highlightColor = canPlace ? 0x22c55e : 0xef4444;
 
-    for (const tower of simulation.towers) {
-      let view = this.towerViews.get(tower.id);
-      if (!view) {
-        const shadow = this.add.ellipse(0, 8, 44, 14, 0x263222, 0.38);
-        const sprite = this.add
-          .sprite(0, 0, 'gameAtlas', towerFrameKey(tower.type, 'idle', 0))
-          .setOrigin(0.5, 0.92)
-          .setScale(RENDER_TUNING.towerScale);
-        const levelBadge = this.add
-          .text(18, -61, `Lv.${tower.level}`, {
-            fontFamily: 'K2D, Tahoma, sans-serif',
-            fontSize: `${RENDER_TUNING.towerBadgeFontPx}px`,
-            fontStyle: 'bold',
-            color: '#18243b',
-            backgroundColor: '#ffdc75',
-            padding: { x: 4, y: 2 },
-            stroke: '#fff4db',
-            strokeThickness: 1,
-          })
-          .setOrigin(0.5);
-        const ring = this.add
-          .circle(0, 0, 26, 0x000000, 0)
-          .setStrokeStyle(2, accent, 0.95);
-        const container = this.add
-          .container(tower.x, tower.y, [shadow, ring, sprite, levelBadge])
-          .setDepth(4);
+      this.gridGraphics.fillStyle(highlightColor, 0.22);
+      this.gridGraphics.fillRoundedRect(x + 2, y + 2, width - 4, height - 4, 8);
 
-        view = { container, sprite, levelBadge, level: tower.level };
-        this.towerViews.set(tower.id, view);
+      this.gridGraphics.lineStyle(2, highlightColor, 0.85);
+      this.gridGraphics.strokeRoundedRect(x + 2, y + 2, width - 4, height - 4, 8);
 
-        if (tower.level > 1) {
-          sprite.play(towerAnimationKey(tower.type, 'upgrade'));
-          sprite.once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
-            if (sprite.active) sprite.play(towerAnimationKey(tower.type, 'idle'));
-          });
-        } else {
-          sprite.play(towerAnimationKey(tower.type, 'idle'));
-        }
-      } else if (tower.level !== view.level) {
-        view.level = tower.level;
-        view.levelBadge.setText(`Lv.${tower.level}`);
-        view.sprite.play(towerAnimationKey(tower.type, 'upgrade'));
-        view.sprite.once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
-          if (view && view.sprite.active) view.sprite.play(towerAnimationKey(tower.type, 'idle'));
-        });
+      if (canPlace && previewRange && previewRange > 0) {
+        const centerX = x + width / 2;
+        const centerY = y + height / 2;
+        this.gridGraphics.fillStyle(0x38bdf8, 0.08);
+        this.gridGraphics.fillCircle(centerX, centerY, previewRange);
+        this.gridGraphics.lineStyle(1.5, 0x38bdf8, 0.45);
+        this.gridGraphics.strokeCircle(centerX, centerY, previewRange);
       }
-      view.container.setPosition(tower.x, tower.y);
     }
   }
 
-  private syncZombies(): void {
-    const simulation = this.simulation;
-    if (!simulation) return;
+  private syncEntities(entities: RenderableEntityState[], timeMs: number): void {
+    if (!this.shadowGraphics || !this.healthBarGraphics) return;
+    this.shadowGraphics.clear();
+    this.healthBarGraphics.clear();
 
-    const livingIds = new Set(simulation.zombies.map((zombie) => zombie.id));
-    for (const [id, sprite] of this.zombieViews) {
-      if (livingIds.has(id)) continue;
-      this.zombieViews.delete(id);
-      this.zombieLabels.get(id)?.destroy();
-      this.zombieLabels.delete(id);
+    const activeIds = new Set<number>();
 
-      const zombieType = this.zombieTypes.get(id) ?? 'normal';
-      this.zombieTypes.delete(id);
-      this.zombieHp.delete(id);
-      this.zombiePreviousX.delete(id);
+    for (const entity of entities) {
+      activeIds.add(entity.id);
+      const tuning = getUnitRenderTuning(entity.category, entity.typeKey);
 
-      sprite.play(zombieAnimationKey(zombieType, 'dead'));
-      this.tweens.add({
-        targets: sprite,
-        alpha: 0,
-        duration: 540,
-        delay: 250,
-        onComplete: () => sprite.destroy(),
-      });
-    }
-
-    for (const zombie of simulation.zombies) {
-      let sprite = this.zombieViews.get(zombie.id);
-      const displaySize = getZombieDisplaySize(zombie.type);
+      let sprite = this.unitSprites.get(entity.id);
       if (!sprite) {
-        sprite = this.add
-          .sprite(zombie.x, zombie.y, 'gameAtlas', zombieFrameKey(zombie.type, 'walk', 0))
-          .setOrigin(0.5, 0.88)
-          .setScale(RENDER_TUNING.zombieScaleByType[zombie.type])
-          .setDepth(6);
-        sprite.play(zombieAnimationKey(zombie.type, 'walk'));
-
-        this.zombieTypes.set(zombie.id, zombie.type);
-        this.zombieHp.set(zombie.id, zombie.hp);
-        this.zombiePreviousX.set(zombie.id, zombie.x);
-
-        const label = this.add
-          .text(zombie.x, zombie.y - displaySize.height - 8, '', {
-            fontFamily: 'K2D, Tahoma, sans-serif',
-            fontSize: `${RENDER_TUNING.zombieLabelFontPx}px`,
-            fontStyle: 'bold',
-            color: '#18243b',
-            backgroundColor: '#fff4db',
-            padding: { x: 5, y: 3 },
-            stroke: '#fff',
-            strokeThickness: 1,
-          })
-          .setOrigin(0.5)
-          .setDepth(7);
-        this.zombieLabels.set(zombie.id, label);
-        this.zombieViews.set(zombie.id, sprite);
+        const frameName = resolveEntityFrame(entity.typeKey);
+        sprite = this.add.sprite(entity.x, entity.y, ART_KEYS.ATLAS, frameName);
+        sprite.setOrigin(tuning.originX, tuning.originY);
+        this.unitSprites.set(entity.id, sprite);
       }
 
-      const lastHp = this.zombieHp.get(zombie.id);
-      const hurtKey = zombieAnimationKey(zombie.type, 'hurt');
-      if (lastHp !== undefined && zombie.hp < lastHp && sprite.anims.currentAnim?.key !== hurtKey) {
-        sprite.play(hurtKey);
-        sprite.once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
-          if (sprite?.active) sprite.play(zombieAnimationKey(zombie.type, 'walk'));
-        });
-      }
-      this.zombieHp.set(zombie.id, zombie.hp);
+      const footX = Math.round(entity.x + tuning.offsetX);
+      const footY = Math.round(entity.y + tuning.offsetY);
 
-      const previousX = this.zombiePreviousX.get(zombie.id);
-      if (previousX !== undefined && Math.abs(zombie.x - previousX) > 0.5) {
-        sprite.setFlipX(zombie.x < previousX);
-      }
-      this.zombiePreviousX.set(zombie.id, zombie.x);
-      sprite.setPosition(zombie.x, zombie.y);
-
-      const label = this.zombieLabels.get(zombie.id);
-      label?.setPosition(zombie.x, zombie.y - displaySize.height - 8);
-      label?.setText(
-        zombie.shieldHits > 0
-          ? `🔒 ${zombie.shieldHits}  ${zombie.wordLabel ?? ''}`
-          : (zombie.wordLabel ?? 'คำศัพท์').slice(0, 15),
+      // 1. วาดเงาวงรีใต้เท้าเพื่อให้ป้อมและซอมบี้ยืนติดพื้นสนามรบ
+      this.shadowGraphics.fillStyle(0x090d16, 0.36);
+      this.shadowGraphics.fillEllipse(
+        footX,
+        footY,
+        tuning.shadowRadiusX * 2,
+        tuning.shadowRadiusY * 2
       );
+
+      // 2. คำนวณแอนิเมชันหายใจ (ป้อม) หรือก้าวเดิน (ซอมบี้)
+      const motion = computeProceduralMotion(
+        timeMs,
+        entity.id,
+        Boolean(entity.isMoving),
+        tuning.scale
+      );
+
+      sprite.setPosition(footX, Math.round(footY + motion.offsetY));
+      sprite.setScale(motion.scaleX, motion.scaleY);
+      sprite.setRotation(motion.rotation);
+
+      // 3. จัดลำดับความลึกตามแกน Y (ตัวที่อยู่เลนล่างจะบังตัวที่อยู่เลนบนอย่างถูกต้อง)
+      sprite.setDepth(Math.max(20, footY));
+
+      // 4. เอฟเฟกต์สีเมื่อโดนโจมตี (Hit Flash) หรือติดสถานะสโลว์
+      if (entity.hitFlashRemainingMs && entity.hitFlashRemainingMs > 0) {
+        sprite.setTintFill(0xffffff);
+      } else if (entity.isSlowed) {
+        sprite.setTint(0x7dd3fc);
+      } else {
+        sprite.clearTint();
+      }
+
+      // 5. วาดหลอดเลือดเฉพาะซอมบี้ บอส หรือป้อมที่เลือดลด
+      if (entity.category !== 'tower' || entity.hp < entity.maxHp) {
+        drawCrispHealthBar(
+          this.healthBarGraphics,
+          footX,
+          footY + tuning.healthBarOffsetY,
+          tuning.healthBarWidth,
+          entity.category === 'boss' ? 9 : 6,
+          entity.hp,
+          entity.maxHp,
+          entity.category === 'boss'
+        );
+      }
+    }
+
+    // ลบ Sprite ของยูนิตที่ตายหรือถูกนำออกจากสนามรบแล้ว
+    for (const [id, sprite] of this.unitSprites.entries()) {
+      if (!activeIds.has(id)) {
+        sprite.destroy();
+        this.unitSprites.delete(id);
+      }
     }
   }
 
-  private syncProjectiles(): void {
-    const graphics = this.projectileGraphics;
-    if (!graphics || !this.simulation) return;
-    graphics.clear();
+  private syncProjectiles(projectiles: RenderableProjectileState[]): void {
+    const activeIds = new Set<number>();
 
-    this.simulation.projectiles.forEach((projectile) => {
-      graphics.fillStyle(
-        projectile.behavior === 'slow'
-          ? 0xc4a5ff
-          : projectile.behavior === 'splash'
-            ? 0x72e3df
-            : 0xffdc75,
-        1,
-      );
-      graphics.fillCircle(projectile.x, projectile.y, projectile.behavior === 'rapid' ? 4 : 6);
-    });
+    for (const proj of projectiles) {
+      activeIds.add(proj.id);
+      let sprite = this.projectileSprites.get(proj.id);
+      if (!sprite) {
+        const frameName = resolveEntityFrame(proj.frameKey);
+        sprite = this.add.sprite(proj.x, proj.y, ART_KEYS.ATLAS, frameName);
+        sprite.setScale(PROJECTILE_TUNING.scale);
+        sprite.setDepth(1500);
+        this.projectileSprites.set(proj.id, sprite);
+      }
+
+      sprite.setPosition(Math.round(proj.x), Math.round(proj.y));
+      sprite.setRotation(proj.rotation);
+    }
+
+    for (const [id, sprite] of this.projectileSprites.entries()) {
+      if (!activeIds.has(id)) {
+        sprite.destroy();
+        this.projectileSprites.delete(id);
+      }
+    }
+  }
+
+  private updateFloatingTexts(dtMs: number): void {
+    const dtSec = dtMs / 1000;
+    for (let i = this.floatingTexts.length - 1; i >= 0; i--) {
+      const item = this.floatingTexts[i];
+      item.elapsedMs += dtMs;
+      item.textObj.y += item.vy * dtSec;
+
+      const progress = Phaser.Math.Clamp(item.elapsedMs / item.durationMs, 0, 1);
+      item.textObj.setAlpha(1 - Math.pow(progress, 2));
+
+      if (item.elapsedMs >= item.durationMs) {
+        item.textObj.destroy();
+        this.floatingTexts.splice(i, 1);
+      }
+    }
   }
 }
