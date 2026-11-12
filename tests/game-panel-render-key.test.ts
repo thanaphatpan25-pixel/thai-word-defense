@@ -1,8 +1,11 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { createGamePanelRenderKey } from '../src/ui/gamePanelRenderKey';
+import {
+  createGamePanelRenderKey,
+  type GamePanelRenderState,
+} from '../src/ui/gamePanelRenderKey';
 
-const snapshot = {
+const baseState: GamePanelRenderState = {
   phase: 'playing',
   questionId: 'thai-001',
   message: 'ตอบคำถามให้ถูกนะ',
@@ -11,8 +14,6 @@ const snapshot = {
   paused: false,
   timerEnabled: true,
   upgradeCardIds: [],
-};
-const uiState = {
   selectedTower: null,
   lastAnswer: null,
   orderSelection: [],
@@ -20,30 +21,38 @@ const uiState = {
 };
 
 test('timer ticks do not invalidate the game panel and replace its buttons', () => {
-  const first = createGamePanelRenderKey(snapshot, uiState);
-  const nextTimerTick = createGamePanelRenderKey(snapshot, uiState);
+  const first = createGamePanelRenderKey(baseState);
+  const nextTimerTick = createGamePanelRenderKey(baseState);
   assert.equal(nextTimerTick, first);
 });
 
 test('selecting a tower invalidates the panel once to update its selected state', () => {
-  const initial = createGamePanelRenderKey(snapshot, uiState);
-  const selected = createGamePanelRenderKey(snapshot, { ...uiState, selectedTower: 'archer' });
+  const initial = createGamePanelRenderKey(baseState);
+  const selected = createGamePanelRenderKey({ ...baseState, selectedTower: 'archer' });
   assert.notEqual(selected, initial);
 });
 
 test('placing a tower invalidates the panel to refresh tower count and selected entity', () => {
-  const before = createGamePanelRenderKey(snapshot, { ...uiState, selectedTower: 'archer' });
+  const before = createGamePanelRenderKey({ ...baseState, selectedTower: 'archer' });
   const after = createGamePanelRenderKey({
-    ...snapshot,
-    towers: [...snapshot.towers, { id: 'tower-2', type: 'archer', level: 1 }],
-  }, uiState);
+    ...baseState,
+    selectedTower: null,
+    towers: [...baseState.towers, { id: 'tower-2', type: 'archer', level: 1 }],
+  });
   assert.notEqual(after, before);
 });
 
 test('question, answer feedback, pause and modal state changes invalidate the panel', () => {
-  const baseline = createGamePanelRenderKey(snapshot, uiState);
-  assert.notEqual(createGamePanelRenderKey({ ...snapshot, questionId: 'thai-002' }, uiState), baseline);
-  assert.notEqual(createGamePanelRenderKey(snapshot, { ...uiState, lastAnswer: { correct: true, explanation: 'ถูกต้อง', reward: 5 } }), baseline);
-  assert.notEqual(createGamePanelRenderKey({ ...snapshot, paused: true }, uiState), baseline);
-  assert.notEqual(createGamePanelRenderKey({ ...snapshot, phase: 'wave-clear', upgradeCardIds: ['repair'] }, uiState), baseline);
+  const baseline = createGamePanelRenderKey(baseState);
+  assert.notEqual(createGamePanelRenderKey({ ...baseState, questionId: 'thai-002' }), baseline);
+  assert.notEqual(createGamePanelRenderKey({
+    ...baseState,
+    lastAnswer: { correct: true, explanation: 'ถูกต้อง', reward: 5 },
+  }), baseline);
+  assert.notEqual(createGamePanelRenderKey({ ...baseState, paused: true }), baseline);
+  assert.notEqual(createGamePanelRenderKey({
+    ...baseState,
+    phase: 'wave-clear',
+    upgradeCardIds: ['repair'],
+  }), baseline);
 });
