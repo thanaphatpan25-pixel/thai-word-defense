@@ -242,3 +242,13 @@ h3 { font-size: 14px; margin-bottom: 9px; }
   .modal-card { width: 100%; max-height: none; overflow: visible; border: 0; }
   .review-list small, .stat-row { color: #333; }
 }
+
+/* Interactive controls keep their DOM nodes between game ticks. */
+.tower-option, .choice-button, .tool-button, .tiny-button {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+.tower-option:focus-visible, .choice-button:focus-visible, .tool-button:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}

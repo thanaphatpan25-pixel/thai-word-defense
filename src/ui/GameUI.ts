@@ -1,4 +1,5 @@
 import { CATEGORY_LABELS, type QuestionCategory } from '../data/questionTypes';
+import { createGamePanelRenderKey } from './gamePanelRenderKey';
 import { TOWERS, type TowerType } from '../data/towers';
 import type { GameMode, GameResultSummary, SimulationOptions, SimulationSnapshot } from '../systems/GameSimulation';
 import type { SaveData, SkinId } from '../systems/SaveSystem';
@@ -44,6 +45,7 @@ export class GameUI {
   private menuTeacherMode = false;
   private soundEnabled = true;
   private lastRenderAt = 0;
+  private lastPanelRenderKey = '';
   private lastQuestionId = '';
   private exportSummary: GameResultSummary | null = null;
 
@@ -90,6 +92,7 @@ export class GameUI {
     this.menuTimerEnabled = saveData.settings.timerEnabled;
     this.menuSlowMode = saveData.settings.slowMode;
     this.snapshot = null;
+    this.lastPanelRenderKey = '';
     this.exportSummary = null;
     this.lastAnswer = null;
     this.selectedTower = null;
@@ -160,21 +163,51 @@ export class GameUI {
     }).join('');
     const selectedEntity = snapshot.towers.find((tower) => tower.id === snapshot.selectedTowerId);
     const upgrade = selectedEntity ? `<div class="selected-tower"><div><strong>${TOWERS[selectedEntity.type].icon} ${escapeHtml(TOWERS[selectedEntity.type].name)} · Lv.${selectedEntity.level}</strong><small>${selectedEntity.level >= 3 ? 'อัปเกรดเต็มระดับแล้ว' : `อัปเกรด ${TOWERS[selectedEntity.type].upgradeCosts[selectedEntity.level - 1]} เหรียญ`}</small></div><button class="tiny-button" data-action="upgrade" ${selectedEntity.level >= 3 ? 'disabled' : ''}>อัปเกรด</button></div>` : '';
-    this.sidePanel.innerHTML = `
-      <section class="question-panel">
-        <div class="panel-head"><div><div class="eyebrow">THAI LANGUAGE QUEST</div><h2>โจทย์ประจำด่าน</h2></div><div class="timer-chip ${snapshot.timeLeftMs < 6000 && snapshot.phase === 'playing' ? 'timer-danger' : ''}">⏱ ${snapshot.phase === 'practice' || !snapshot.timerEnabled ? 'ไม่จำกัด' : formatTime(snapshot.timeLeftMs)}</div></div>
-        <div class="question-meta"><span class="category-chip">${escapeHtml(CATEGORY_LABELS[question.category])}</span><span class="difficulty-chip">${'★'.repeat(question.difficulty)}${'☆'.repeat(3 - question.difficulty)}</span><span class="question-type">${this.questionTypeLabel(question.type)}</span></div>
-        <p class="question-text">${escapeHtml(question.question)}</p>
-        <div class="answer-area">${answerBlock}</div>
-        <div class="encouragement">${escapeHtml(snapshot.message)}</div>
-      </section>
-      <section class="tower-panel">
-        <div class="section-heading"><div><div class="eyebrow">DEFENSE KIT</div><h2>เลือกป้อมปราการ</h2></div><span class="small-note">สูงสุด Lv.3</span></div>
-        <div class="tower-grid">${towerList}</div>
-        ${this.selectedTower ? `<div class="place-hint">เลือก ${escapeHtml(TOWERS[this.selectedTower].name)} แล้ว แตะช่องว่างบนแผนที่เพื่อวาง</div>` : ''}
-        ${upgrade}
-      </section>
-      <section class="bottom-tools"><button class="tool-button" data-action="teacher">🧑‍🏫 โหมดครู</button><button class="tool-button" data-action="pause" ${snapshot.phase !== 'playing' ? 'disabled' : ''}>${snapshot.paused ? '▶ เล่นต่อ' : '⏸ พักเกม'}</button><button class="tool-button" data-action="sound">${this.soundEnabled ? '🔊 เสียงเปิด' : '🔇 ปิดเสียง'}</button><button class="tool-button" data-action="menu">⌂ เมนูหลัก</button></section>`;
+    const panelRenderKey = createGamePanelRenderKey({
+      phase: snapshot.phase,
+      questionId: snapshot.question.id,
+      message: snapshot.message,
+      towers: snapshot.towers.map((tower) => ({
+        id: tower.id,
+        type: tower.type,
+        level: tower.level,
+      })),
+      selectedTowerId: snapshot.selectedTowerId,
+      paused: snapshot.paused,
+      timerEnabled: snapshot.timerEnabled,
+      upgradeCardIds: snapshot.upgradeCards.map((card) => card.id),
+      selectedTower: this.selectedTower,
+      lastAnswer: this.lastAnswer,
+      orderSelection: this.orderSelection,
+      soundEnabled: this.soundEnabled,
+    });
+
+    // Preserve existing button elements between simulation ticks. Replacing the
+    // entire side panel every 160ms caused flicker and made tower taps unreliable.
+    if (panelRenderKey !== this.lastPanelRenderKey) {
+      this.sidePanel.innerHTML = `
+        <section class="question-panel">
+          <div class="panel-head"><div><div class="eyebrow">THAI LANGUAGE QUEST</div><h2>โจทย์ประจำด่าน</h2></div><div class="timer-chip ${snapshot.timeLeftMs < 6000 && snapshot.phase === 'playing' ? 'timer-danger' : ''}">⏱ ${snapshot.phase === 'practice' || !snapshot.timerEnabled ? 'ไม่จำกัด' : formatTime(snapshot.timeLeftMs)}</div></div>
+          <div class="question-meta"><span class="category-chip">${escapeHtml(CATEGORY_LABELS[question.category])}</span><span class="difficulty-chip">${'★'.repeat(question.difficulty)}${'☆'.repeat(3 - question.difficulty)}</span><span class="question-type">${this.questionTypeLabel(question.type)}</span></div>
+          <p class="question-text">${escapeHtml(question.question)}</p>
+          <div class="answer-area">${answerBlock}</div>
+          <div class="encouragement">${escapeHtml(snapshot.message)}</div>
+        </section>
+        <section class="tower-panel">
+          <div class="section-heading"><div><div class="eyebrow">DEFENSE KIT</div><h2>เลือกป้อมปราการ</h2></div><span class="small-note">สูงสุด Lv.3</span></div>
+          <div class="tower-grid">${towerList}</div>
+          ${this.selectedTower ? `<div class="place-hint">เลือก ${escapeHtml(TOWERS[this.selectedTower].name)} แล้ว แตะช่องว่างบนแผนที่เพื่อวาง</div>` : ''}
+          ${upgrade}
+        </section>
+        <section class="bottom-tools"><button class="tool-button" data-action="teacher">🧑‍🏫 โหมดครู</button><button class="tool-button" data-action="pause" ${snapshot.phase !== 'playing' ? 'disabled' : ''}>${snapshot.paused ? '▶ เล่นต่อ' : '⏸ พักเกม'}</button><button class="tool-button" data-action="sound">${this.soundEnabled ? '🔊 เสียงเปิด' : '🔇 ปิดเสียง'}</button><button class="tool-button" data-action="menu">⌂ เมนูหลัก</button></section>`;
+      this.lastPanelRenderKey = panelRenderKey;
+    } else {
+      const timerChip = this.sidePanel.querySelector<HTMLElement>('.timer-chip');
+      if (timerChip) {
+        timerChip.textContent = `⏱ ${snapshot.phase === 'practice' || !snapshot.timerEnabled ? 'ไม่จำกัด' : formatTime(snapshot.timeLeftMs)}`;
+        timerChip.classList.toggle('timer-danger', snapshot.timeLeftMs < 6000 && snapshot.phase === 'playing');
+      }
+    }
     this.renderModal(snapshot);
   }
 
