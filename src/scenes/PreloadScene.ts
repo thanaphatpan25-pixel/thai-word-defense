@@ -14,6 +14,7 @@ export class PreloadScene extends Phaser.Scene {
       `${base}assets/art/game-atlas.json`,
     );
     this.load.image('battlefield', `${base}assets/art/battlefield.webp`);
+    this.load.image('schoolLibrary', `${base}assets/art/school-library.webp`);
   }
 
   create(): void {

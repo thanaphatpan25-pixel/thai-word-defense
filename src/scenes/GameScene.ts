@@ -8,9 +8,12 @@ import {
   zombieAnimationKey,
   zombieFrameKey,
 } from '../assets/gameArt';
+import { getZombieDisplaySize, RENDER_TUNING } from '../assets/renderTuning';
 
 const WORLD_WIDTH = GRID_COLUMNS * CELL_SIZE;
 const WORLD_HEIGHT = GRID_ROWS * CELL_SIZE;
+const SCHOOL_X = WORLD_WIDTH - 68;
+const SCHOOL_BASE_Y = 278;
 
 type TowerView = {
   container: Phaser.GameObjects.Container;
@@ -43,11 +46,34 @@ export class GameScene extends Phaser.Scene {
   create(): void {
     this.cameras.main.setBackgroundColor('#82954d');
     this.cameras.main.setBounds(0, 0, WORLD_WIDTH, WORLD_HEIGHT);
+    // The existing battlefield is 377×232; nearest-neighbour 2× keeps the route aligned to the grid.
     this.add
       .image(WORLD_WIDTH / 2, WORLD_HEIGHT / 2, 'battlefield')
       .setOrigin(0.5)
       .setScale(2)
       .setDepth(0);
+
+    this.add
+      .ellipse(SCHOOL_X, SCHOOL_BASE_Y - 4, 120, 22, 0x263222, 0.32)
+      .setDepth(1);
+    this.add
+      .image(SCHOOL_X, SCHOOL_BASE_Y, 'schoolLibrary')
+      .setOrigin(0.5, 1)
+      .setScale(RENDER_TUNING.schoolScale)
+      .setDepth(2);
+    this.add
+      .text(SCHOOL_X, SCHOOL_BASE_Y + 4, 'ห้องสมุด', {
+        fontFamily: 'K2D, Tahoma, sans-serif',
+        fontSize: '12px',
+        fontStyle: 'bold',
+        color: '#fff4db',
+        backgroundColor: '#263b32',
+        padding: { x: 6, y: 3 },
+        stroke: '#17251f',
+        strokeThickness: 2,
+      })
+      .setOrigin(0.5, 0)
+      .setDepth(3);
 
     this.projectileGraphics = this.add.graphics().setDepth(10);
     this.input.on('pointerdown', (pointer: Phaser.Input.Pointer) => {
@@ -103,25 +129,25 @@ export class GameScene extends Phaser.Scene {
     for (const tower of simulation.towers) {
       let view = this.towerViews.get(tower.id);
       if (!view) {
-        const shadow = this.add.ellipse(0, 7, 36, 12, 0x263222, 0.35);
+        const shadow = this.add.ellipse(0, 8, 44, 14, 0x263222, 0.38);
         const sprite = this.add
           .sprite(0, 0, 'gameAtlas', towerFrameKey(tower.type, 'idle', 0))
           .setOrigin(0.5, 0.92)
-          .setScale(1.5);
+          .setScale(RENDER_TUNING.towerScale);
         const levelBadge = this.add
-          .text(14, -27, `Lv.${tower.level}`, {
+          .text(18, -61, `Lv.${tower.level}`, {
             fontFamily: 'K2D, Tahoma, sans-serif',
-            fontSize: '9px',
+            fontSize: `${RENDER_TUNING.towerBadgeFontPx}px`,
             fontStyle: 'bold',
             color: '#18243b',
             backgroundColor: '#ffdc75',
-            padding: { x: 3, y: 2 },
+            padding: { x: 4, y: 2 },
             stroke: '#fff4db',
             strokeThickness: 1,
           })
           .setOrigin(0.5);
         const ring = this.add
-          .circle(0, 0, 22, 0x000000, 0)
+          .circle(0, 0, 26, 0x000000, 0)
           .setStrokeStyle(2, accent, 0.95);
         const container = this.add
           .container(tower.x, tower.y, [shadow, ring, sprite, levelBadge])
@@ -178,21 +204,12 @@ export class GameScene extends Phaser.Scene {
 
     for (const zombie of simulation.zombies) {
       let sprite = this.zombieViews.get(zombie.id);
+      const displaySize = getZombieDisplaySize(zombie.type);
       if (!sprite) {
-        const scaleByType: Record<ZombieType, number> = {
-          normal: 1.75,
-          runner: 1.55,
-          tank: 2.05,
-          jumper: 1.8,
-          healer: 1.75,
-          splitter: 1.85,
-          boss: 2.25,
-        };
-
         sprite = this.add
           .sprite(zombie.x, zombie.y, 'gameAtlas', zombieFrameKey(zombie.type, 'walk', 0))
           .setOrigin(0.5, 0.88)
-          .setScale(scaleByType[zombie.type])
+          .setScale(RENDER_TUNING.zombieScaleByType[zombie.type])
           .setDepth(6);
         sprite.play(zombieAnimationKey(zombie.type, 'walk'));
 
@@ -201,13 +218,13 @@ export class GameScene extends Phaser.Scene {
         this.zombiePreviousX.set(zombie.id, zombie.x);
 
         const label = this.add
-          .text(zombie.x, zombie.y - 34, '', {
+          .text(zombie.x, zombie.y - displaySize.height - 8, '', {
             fontFamily: 'K2D, Tahoma, sans-serif',
-            fontSize: '10px',
+            fontSize: `${RENDER_TUNING.zombieLabelFontPx}px`,
             fontStyle: 'bold',
             color: '#18243b',
             backgroundColor: '#fff4db',
-            padding: { x: 4, y: 2 },
+            padding: { x: 5, y: 3 },
             stroke: '#fff',
             strokeThickness: 1,
           })
@@ -222,9 +239,7 @@ export class GameScene extends Phaser.Scene {
       if (lastHp !== undefined && zombie.hp < lastHp && sprite.anims.currentAnim?.key !== hurtKey) {
         sprite.play(hurtKey);
         sprite.once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
-          if (sprite?.active) {
-            sprite.play(zombieAnimationKey(zombie.type, 'walk'));
-          }
+          if (sprite?.active) sprite.play(zombieAnimationKey(zombie.type, 'walk'));
         });
       }
       this.zombieHp.set(zombie.id, zombie.hp);
@@ -237,7 +252,7 @@ export class GameScene extends Phaser.Scene {
       sprite.setPosition(zombie.x, zombie.y);
 
       const label = this.zombieLabels.get(zombie.id);
-      label?.setPosition(zombie.x, zombie.y - (zombie.type === 'boss' ? 48 : 35));
+      label?.setPosition(zombie.x, zombie.y - displaySize.height - 8);
       label?.setText(
         zombie.shieldHits > 0
           ? `🔒 ${zombie.shieldHits}  ${zombie.wordLabel ?? ''}`
@@ -260,7 +275,7 @@ export class GameScene extends Phaser.Scene {
             : 0xffdc75,
         1,
       );
-      graphics.fillCircle(projectile.x, projectile.y, projectile.behavior === 'rapid' ? 3 : 5);
+      graphics.fillCircle(projectile.x, projectile.y, projectile.behavior === 'rapid' ? 4 : 6);
     });
   }
 }

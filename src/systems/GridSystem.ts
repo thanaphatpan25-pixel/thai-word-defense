@@ -10,13 +10,27 @@ export const GRID_PATH = [
   { x: 11, y: 2 }, { x: 12, y: 2 },
 ] as const;
 
-const pathKeys = new Set(GRID_PATH.map((point) => `${point.x},${point.y}`));
+// Reserve a 2×2 footprint for the enlarged school-library landmark.
+export const SCHOOL_FOOTPRINT_CELLS = [
+  { x: 11, y: 3 }, { x: 12, y: 3 },
+  { x: 11, y: 4 }, { x: 12, y: 4 },
+] as const;
 
-export function isPathCell(x: number, y: number): boolean { return pathKeys.has(`${x},${y}`); }
+const pathKeys = new Set(GRID_PATH.map((point) => `${point.x},${point.y}`));
+const reservedKeys = new Set(SCHOOL_FOOTPRINT_CELLS.map((point) => `${point.x},${point.y}`));
+
+export function isPathCell(x: number, y: number): boolean {
+  return pathKeys.has(`${x},${y}`);
+}
+
+export function isReservedCell(x: number, y: number): boolean {
+  return reservedKeys.has(`${x},${y}`);
+}
 
 export function canPlaceTower(x: number, y: number, occupied: Array<{ x: number; y: number }>): boolean {
   return Number.isInteger(x) && Number.isInteger(y)
     && x >= 0 && x < GRID_COLUMNS && y >= 0 && y < GRID_ROWS
     && !isPathCell(x, y)
+    && !isReservedCell(x, y)
     && !occupied.some((point) => point.x === x && point.y === y);
 }
