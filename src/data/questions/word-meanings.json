@@ -1,0 +1,660 @@
+[
+  {
+    "id": "word-meanings-001",
+    "category": "word-meanings",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า ขยัน มีความหมายใกล้เคียงกับคำใด",
+    "choices": [
+      "เกียจคร้าน",
+      "ประมาท",
+      "ขะมักเขม้น",
+      "เฉื่อยชา"
+    ],
+    "answer": "ขะมักเขม้น",
+    "explanation": "ขยัน หมายถึง ตั้งใจทำงาน ไม่เกียจคร้าน",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-002",
+    "category": "word-meanings",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำตรงข้ามของคำว่า สูง คือคำใด",
+    "choices": [
+      "ต่ำ",
+      "ใหญ่",
+      "ยาว",
+      "กว้าง"
+    ],
+    "answer": "ต่ำ",
+    "explanation": "สูง มีความหมายตรงข้ามกับ ต่ำ",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-003",
+    "category": "word-meanings",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำตรงข้ามของคำว่า สว่าง คือคำใด",
+    "choices": [
+      "สดใส",
+      "ส่องแสง",
+      "แจ่มใส",
+      "มืด"
+    ],
+    "answer": "มืด",
+    "explanation": "สว่าง ตรงข้ามกับ มืด",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-004",
+    "category": "word-meanings",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า รวดเร็ว มีความหมายใกล้เคียงกับคำใด",
+    "choices": [
+      "หยุดนิ่ง",
+      "อ่อนแรง",
+      "ว่องไว",
+      "เชื่องช้า"
+    ],
+    "answer": "ว่องไว",
+    "explanation": "รวดเร็ว และ ว่องไว มีความหมายใกล้กัน",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-005",
+    "category": "word-meanings",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำตรงข้ามของคำว่า ประหยัด คือคำใด",
+    "choices": [
+      "รอบคอบ",
+      "ฟุ่มเฟือย",
+      "อดออม",
+      "มัธยัสถ์"
+    ],
+    "answer": "ฟุ่มเฟือย",
+    "explanation": "ประหยัด ตรงข้ามกับ ฟุ่มเฟือย",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-006",
+    "category": "word-meanings",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำว่า กล้าหาญ มีความหมายใกล้เคียงกับคำใด",
+    "choices": [
+      "องอาจ",
+      "ขี้กลัว",
+      "ลังเล",
+      "หวาดหวั่น"
+    ],
+    "answer": "องอาจ",
+    "explanation": "กล้าหาญ หมายถึง ไม่กลัวอันตรายง่าย ๆ",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-007",
+    "category": "word-meanings",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำตรงข้ามของคำว่า สุภาพ คือคำใด",
+    "choices": [
+      "อ่อนโยน",
+      "เรียบร้อย",
+      "นอบน้อม",
+      "หยาบคาย"
+    ],
+    "answer": "หยาบคาย",
+    "explanation": "สุภาพ ตรงข้ามกับ หยาบคาย",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-008",
+    "category": "word-meanings",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า ดีใจ มีความหมายใกล้เคียงกับคำใด",
+    "choices": [
+      "ยินดี",
+      "โกรธ",
+      "กลัว",
+      "เสียใจ"
+    ],
+    "answer": "ยินดี",
+    "explanation": "ดีใจ และ ยินดี สื่อถึงความสุข",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-009",
+    "category": "word-meanings",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำตรงข้ามของคำว่า แข็งแรง คือคำใด",
+    "choices": [
+      "เข้มแข็ง",
+      "อ่อนแอ",
+      "ทนทาน",
+      "อดทน"
+    ],
+    "answer": "อ่อนแอ",
+    "explanation": "แข็งแรง ตรงข้ามกับ อ่อนแอ",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-010",
+    "category": "word-meanings",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำว่า เงียบสงบ มีความหมายใกล้เคียงกับคำใด",
+    "choices": [
+      "วุ่นวาย",
+      "อึกทึก",
+      "สงัด",
+      "เสียงดัง"
+    ],
+    "answer": "สงัด",
+    "explanation": "เงียบสงบ หมายถึง ไม่มีเสียงรบกวน",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-011",
+    "category": "word-meanings",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำใดเป็นคำพ้องเสียงกับ บาท",
+    "choices": [
+      "บาด",
+      "บาน",
+      "บ้าน",
+      "บาตร"
+    ],
+    "answer": "บาตร",
+    "explanation": "บาท และ บาตร ออกเสียงเหมือนกันแต่เขียนและมีความหมายต่างกัน",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-012",
+    "category": "word-meanings",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำใดเป็นคำพ้องเสียงกับ การ",
+    "choices": [
+      "กาล",
+      "กาด",
+      "กาง",
+      "กาน"
+    ],
+    "answer": "กาล",
+    "explanation": "การ และ กาล ออกเสียงว่า กาน เหมือนกันแต่ความหมายต่างกัน",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-013",
+    "category": "word-meanings",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "คำว่า สระ ที่หมายถึงแหล่งน้ำ อ่านว่าอย่างไร",
+    "choices": [
+      "สะ-หระ",
+      "สะ",
+      "สะ-ระ",
+      "สา-ระ"
+    ],
+    "answer": "สะ",
+    "explanation": "สระที่หมายถึงบ่อน้ำ อ่านว่า สะ ส่วนสระในภาษาเขียนอ่านว่า สะ-หระ",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-014",
+    "category": "word-meanings",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "คำว่า สระ ที่หมายถึงเครื่องหมายแทนเสียง อ่านว่าอย่างไร",
+    "choices": [
+      "สา",
+      "สะ",
+      "สะ-หระ",
+      "สะ-ระ"
+    ],
+    "answer": "สะ-หระ",
+    "explanation": "สระในหลักภาษา หมายถึงเครื่องหมายแทนเสียง อ่านว่า สะ-หระ",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-015",
+    "category": "word-meanings",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำว่า กาล หมายถึงอะไร",
+    "choices": [
+      "สิ่งของ",
+      "คน",
+      "สถานที่",
+      "เวลา"
+    ],
+    "answer": "เวลา",
+    "explanation": "กาล หมายถึง เวลา หรือช่วงเวลา",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-016",
+    "category": "word-meanings",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำว่า การ หมายถึงอะไรในคำว่า การบ้าน",
+    "choices": [
+      "งานหรือเรื่องที่ทำ",
+      "เครื่องแต่งกาย",
+      "แหล่งน้ำ",
+      "เวลา"
+    ],
+    "answer": "งานหรือเรื่องที่ทำ",
+    "explanation": "การ ใช้สร้างคำนามที่หมายถึงงานหรือกิจกรรม",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-017",
+    "category": "word-meanings",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำใดมีความหมายตรงข้ามกับคำว่า อ่อนโยน",
+    "choices": [
+      "สุภาพ",
+      "นุ่มนวล",
+      "แข็งกระด้าง",
+      "เมตตา"
+    ],
+    "answer": "แข็งกระด้าง",
+    "explanation": "อ่อนโยน ตรงข้ามกับ แข็งกระด้าง",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-018",
+    "category": "word-meanings",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำใดมีความหมายใกล้เคียงกับคำว่า ฉลาด",
+    "choices": [
+      "เฉลียว",
+      "เผอเรอ",
+      "โง่เขลา",
+      "ประมาท"
+    ],
+    "answer": "เฉลียว",
+    "explanation": "ฉลาด และ เฉลียว สื่อถึงความมีไหวพริบ",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-019",
+    "category": "word-meanings",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำตรงข้ามของคำว่า ซื่อสัตย์ คือคำใด",
+    "choices": [
+      "จริงใจ",
+      "ซื่อตรง",
+      "สุจริต",
+      "คดโกง"
+    ],
+    "answer": "คดโกง",
+    "explanation": "ซื่อสัตย์ ตรงข้ามกับ คดโกง",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-020",
+    "category": "word-meanings",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำว่า เมตตา มีความหมายใกล้เคียงกับคำใด",
+    "choices": [
+      "ริษยา",
+      "ดูถูก",
+      "กรุณา",
+      "โกรธแค้น"
+    ],
+    "answer": "กรุณา",
+    "explanation": "เมตตา และ กรุณา สื่อถึงความปรารถนาดีต่อผู้อื่น",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-021",
+    "category": "word-meanings",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "ข้อใดเป็นคำคู่ตรงข้าม",
+    "choices": [
+      "ดิน – ทราย",
+      "ร้อน – เย็น",
+      "บ้าน – โรงเรียน",
+      "กิน – อาหาร"
+    ],
+    "answer": "ร้อน – เย็น",
+    "explanation": "ร้อน และ เย็น มีความหมายตรงกันข้าม",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-022",
+    "category": "word-meanings",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "ข้อใดเป็นคำที่มีความหมายใกล้เคียงกัน",
+    "choices": [
+      "รวดเร็ว – ว่องไว",
+      "สูง – ต่ำ",
+      "มืด – สว่าง",
+      "หนัก – เบา"
+    ],
+    "answer": "รวดเร็ว – ว่องไว",
+    "explanation": "รวดเร็ว และ ว่องไว มีความหมายใกล้เคียงกัน",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-023",
+    "category": "word-meanings",
+    "difficulty": 2,
+    "type": "matching",
+    "question": "จับคู่คำพ้องเสียงให้ถูกต้อง",
+    "choices": [
+      "แมว – หมา",
+      "กิน – นอน",
+      "สูง – ต่ำ",
+      "บาท – บาตร"
+    ],
+    "answer": "บาท – บาตร",
+    "explanation": "บาท กับ บาตร ออกเสียงเหมือนกัน แต่เขียนและมีความหมายต่างกัน",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-024",
+    "category": "word-meanings",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำว่า ปรารถนา มีความหมายใกล้เคียงกับคำใด",
+    "choices": [
+      "ลืมเลือน",
+      "หยุดพัก",
+      "ต้องการ",
+      "ปฏิเสธ"
+    ],
+    "answer": "ต้องการ",
+    "explanation": "ปรารถนา หมายถึง ต้องการหรืออยากได้",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-025",
+    "category": "word-meanings",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "คำตรงข้ามของคำว่า อุดมสมบูรณ์ คือคำใด",
+    "choices": [
+      "เต็มเปี่ยม",
+      "ขาดแคลน",
+      "มั่งคั่ง",
+      "เพียงพอ"
+    ],
+    "answer": "ขาดแคลน",
+    "explanation": "อุดมสมบูรณ์ ตรงข้ามกับ ขาดแคลน",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-026",
+    "category": "word-meanings",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "คำว่า พินิจ มีความหมายใกล้เคียงกับคำใด",
+    "choices": [
+      "พิจารณา",
+      "ละเลย",
+      "หลีกหนี",
+      "ลืม"
+    ],
+    "answer": "พิจารณา",
+    "explanation": "พินิจ หมายถึง พิจารณาอย่างละเอียด",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-027",
+    "category": "word-meanings",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "ข้อใดเป็นคำที่มีความหมายเหมือนหรือใกล้กับคำว่า บ้าน",
+    "choices": [
+      "ถนน",
+      "ตลาด",
+      "ทุ่งนา",
+      "เรือน"
+    ],
+    "answer": "เรือน",
+    "explanation": "เรือน เป็นคำที่ใช้เรียกที่อยู่อาศัยเช่นเดียวกับบ้าน",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-028",
+    "category": "word-meanings",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำตรงข้ามของคำว่า ขยัน คือคำใด",
+    "choices": [
+      "เกียจคร้าน",
+      "ตั้งใจ",
+      "พากเพียร",
+      "มุ่งมั่น"
+    ],
+    "answer": "เกียจคร้าน",
+    "explanation": "ขยัน ตรงข้ามกับ เกียจคร้าน",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-029",
+    "category": "word-meanings",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "คำว่า วิตก มีความหมายใกล้เคียงกับคำใด",
+    "choices": [
+      "ยินดี",
+      "กังวล",
+      "สนุกสนาน",
+      "สบายใจ"
+    ],
+    "answer": "กังวล",
+    "explanation": "วิตก หมายถึง กังวลหรือไม่สบายใจ",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-030",
+    "category": "word-meanings",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำพ้องเสียงมีลักษณะอย่างไร",
+    "choices": [
+      "ออกเสียงต่างกันทุกคำ",
+      "เขียนเหมือนกันและความหมายเหมือนกัน",
+      "ออกเสียงเหมือนกันแต่เขียนหรือความหมายต่างกัน",
+      "เป็นคำที่มีตัวสะกดเหมือนกันเท่านั้น"
+    ],
+    "answer": "ออกเสียงเหมือนกันแต่เขียนหรือความหมายต่างกัน",
+    "explanation": "คำพ้องเสียงออกเสียงเหมือนกัน แต่รูปเขียนและความหมายอาจต่างกัน",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-031",
+    "category": "word-meanings",
+    "difficulty": 1,
+    "type": "true-false",
+    "question": "ข้อความ “สูง” เป็นคำตรงข้ามกับ “ต่ำ” ถูกต้องหรือไม่",
+    "choices": [
+      "ถูก",
+      "ผิด"
+    ],
+    "answer": "ถูก",
+    "explanation": "สูง และ ต่ำ มีความหมายตรงข้ามกัน",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-032",
+    "category": "word-meanings",
+    "difficulty": 2,
+    "type": "fill-blank",
+    "question": "เติมคำตรงข้าม: คนที่ขยัน ไม่ใช่คนที่_____",
+    "choices": [
+      "เกียจคร้าน",
+      "กระตือรือร้น",
+      "ตั้งใจ",
+      "อดทน"
+    ],
+    "answer": "เกียจคร้าน",
+    "explanation": "เกียจคร้าน หมายถึง ไม่ขยันหรือไม่กระตือรือร้น",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "word-meanings-033",
+    "category": "word-meanings",
+    "difficulty": 2,
+    "type": "matching",
+    "question": "จับคู่คำกับคำที่มีความหมายตรงข้าม",
+    "choices": [
+      "สูง–ใหญ่",
+      "สุข–ยินดี",
+      "ร้อน–เย็น",
+      "เร็ว–ไว"
+    ],
+    "answer": "ร้อน–เย็น",
+    "explanation": "ร้อน และ เย็น เป็นคำที่มีความหมายตรงข้ามกัน",
+    "tags": [
+      "word-meanings",
+      "ป4",
+      "ป5"
+    ]
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "name": "thai-word-defense",
+  "version": "1.0.0",
+  "private": false,
+  "description": "เกม Tower Defense ฝึกภาษาไทยสำหรับนักเรียน ป.4–ป.5",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "typecheck": "tsc --noEmit",
+    "test": "node scripts/run-tests.cjs",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "validate:questions": "node scripts/validate-question-banks.mjs"
+  },
+  "dependencies": {
+    "phaser": "3.90.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "eslint": "^9.39.1",
+    "globals": "^16.5.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.4",
+    "vite": "8.3.8",
+    "@types/node": "^22.19.1"
+  }
+}

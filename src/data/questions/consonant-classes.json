@@ -1,0 +1,678 @@
+[
+  {
+    "id": "consonant-classes-001",
+    "category": "consonant-classes",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "พยัญชนะ ข อยู่ในอักษรหมู่ใด",
+    "choices": [
+      "อักษรกลาง",
+      "ไม่มีหมู่",
+      "อักษรสูง",
+      "อักษรต่ำ"
+    ],
+    "answer": "อักษรสูง",
+    "explanation": "ข ไข่ เป็นอักษรสูง",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-002",
+    "category": "consonant-classes",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "พยัญชนะ ก อยู่ในอักษรหมู่ใด",
+    "choices": [
+      "อักษรกลาง",
+      "อักษรต่ำ",
+      "อักษรสูง",
+      "ไม่มีหมู่"
+    ],
+    "answer": "อักษรกลาง",
+    "explanation": "ก ไก่ เป็นอักษรกลาง",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-003",
+    "category": "consonant-classes",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "พยัญชนะ ค อยู่ในอักษรหมู่ใด",
+    "choices": [
+      "อักษรสูง",
+      "ไม่มีหมู่",
+      "อักษรกลาง",
+      "อักษรต่ำ"
+    ],
+    "answer": "อักษรต่ำ",
+    "explanation": "ค ควาย เป็นอักษรต่ำ",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-004",
+    "category": "consonant-classes",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "พยัญชนะ จ อยู่ในอักษรหมู่ใด",
+    "choices": [
+      "อักษรต่ำ",
+      "ไม่มีหมู่",
+      "อักษรกลาง",
+      "อักษรสูง"
+    ],
+    "answer": "อักษรกลาง",
+    "explanation": "จ จาน เป็นอักษรกลาง",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-005",
+    "category": "consonant-classes",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "พยัญชนะ ฝ อยู่ในอักษรหมู่ใด",
+    "choices": [
+      "ไม่มีหมู่",
+      "อักษรสูง",
+      "อักษรกลาง",
+      "อักษรต่ำ"
+    ],
+    "answer": "อักษรสูง",
+    "explanation": "ฝ ฝา เป็นอักษรสูง",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-006",
+    "category": "consonant-classes",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "พยัญชนะ ม อยู่ในอักษรหมู่ใด",
+    "choices": [
+      "อักษรต่ำ",
+      "อักษรสูง",
+      "อักษรกลาง",
+      "ไม่มีหมู่"
+    ],
+    "answer": "อักษรต่ำ",
+    "explanation": "ม ม้า เป็นอักษรต่ำ",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-007",
+    "category": "consonant-classes",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "พยัญชนะ ด อยู่ในอักษรหมู่ใด",
+    "choices": [
+      "อักษรสูง",
+      "อักษรต่ำ",
+      "ไม่มีหมู่",
+      "อักษรกลาง"
+    ],
+    "answer": "อักษรกลาง",
+    "explanation": "ด เด็ก เป็นอักษรกลาง",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-008",
+    "category": "consonant-classes",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "พยัญชนะ ส อยู่ในอักษรหมู่ใด",
+    "choices": [
+      "อักษรสูง",
+      "อักษรต่ำ",
+      "ไม่มีหมู่",
+      "อักษรกลาง"
+    ],
+    "answer": "อักษรสูง",
+    "explanation": "ส เสือ เป็นอักษรสูง",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-009",
+    "category": "consonant-classes",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "พยัญชนะ น อยู่ในอักษรหมู่ใด",
+    "choices": [
+      "อักษรสูง",
+      "อักษรต่ำ",
+      "ไม่มีหมู่",
+      "อักษรกลาง"
+    ],
+    "answer": "อักษรต่ำ",
+    "explanation": "น หนู เป็นอักษรต่ำ",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-010",
+    "category": "consonant-classes",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "พยัญชนะ บ อยู่ในอักษรหมู่ใด",
+    "choices": [
+      "อักษรต่ำ",
+      "อักษรสูง",
+      "อักษรกลาง",
+      "ไม่มีหมู่"
+    ],
+    "answer": "อักษรกลาง",
+    "explanation": "บ ใบไม้ เป็นอักษรกลาง",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-011",
+    "category": "consonant-classes",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "พยัญชนะ ห อยู่ในอักษรหมู่ใด",
+    "choices": [
+      "อักษรต่ำ",
+      "ไม่มีหมู่",
+      "อักษรกลาง",
+      "อักษรสูง"
+    ],
+    "answer": "อักษรสูง",
+    "explanation": "ห หีบ เป็นอักษรสูง",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-012",
+    "category": "consonant-classes",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "พยัญชนะ ย อยู่ในอักษรหมู่ใด",
+    "choices": [
+      "อักษรต่ำ",
+      "อักษรกลาง",
+      "ไม่มีหมู่",
+      "อักษรสูง"
+    ],
+    "answer": "อักษรต่ำ",
+    "explanation": "ย ยักษ์ เป็นอักษรต่ำ",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-013",
+    "category": "consonant-classes",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "พยัญชนะ ป อยู่ในอักษรหมู่ใด",
+    "choices": [
+      "อักษรสูง",
+      "อักษรกลาง",
+      "ไม่มีหมู่",
+      "อักษรต่ำ"
+    ],
+    "answer": "อักษรกลาง",
+    "explanation": "ป ปลา เป็นอักษรกลาง",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-014",
+    "category": "consonant-classes",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "พยัญชนะ ถ อยู่ในอักษรหมู่ใด",
+    "choices": [
+      "อักษรต่ำ",
+      "อักษรกลาง",
+      "อักษรสูง",
+      "ไม่มีหมู่"
+    ],
+    "answer": "อักษรสูง",
+    "explanation": "ถ ถุง เป็นอักษรสูง",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-015",
+    "category": "consonant-classes",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "พยัญชนะ ร อยู่ในอักษรหมู่ใด",
+    "choices": [
+      "อักษรกลาง",
+      "ไม่มีหมู่",
+      "อักษรสูง",
+      "อักษรต่ำ"
+    ],
+    "answer": "อักษรต่ำ",
+    "explanation": "ร เรือ เป็นอักษรต่ำ",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-016",
+    "category": "consonant-classes",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "พยัญชนะ อ อยู่ในอักษรหมู่ใด",
+    "choices": [
+      "อักษรกลาง",
+      "ไม่มีหมู่",
+      "อักษรต่ำ",
+      "อักษรสูง"
+    ],
+    "answer": "อักษรกลาง",
+    "explanation": "อ อ่าง เป็นอักษรกลาง",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-017",
+    "category": "consonant-classes",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "พยัญชนะ ศ อยู่ในอักษรหมู่ใด",
+    "choices": [
+      "อักษรกลาง",
+      "ไม่มีหมู่",
+      "อักษรสูง",
+      "อักษรต่ำ"
+    ],
+    "answer": "อักษรสูง",
+    "explanation": "ศ ศาลา เป็นอักษรสูง",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-018",
+    "category": "consonant-classes",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "พยัญชนะ ล อยู่ในอักษรหมู่ใด",
+    "choices": [
+      "อักษรต่ำ",
+      "อักษรกลาง",
+      "อักษรสูง",
+      "ไม่มีหมู่"
+    ],
+    "answer": "อักษรต่ำ",
+    "explanation": "ล ลิง เป็นอักษรต่ำ",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-019",
+    "category": "consonant-classes",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "พยัญชนะ ต อยู่ในอักษรหมู่ใด",
+    "choices": [
+      "อักษรสูง",
+      "ไม่มีหมู่",
+      "อักษรต่ำ",
+      "อักษรกลาง"
+    ],
+    "answer": "อักษรกลาง",
+    "explanation": "ต เต่า เป็นอักษรกลาง",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-020",
+    "category": "consonant-classes",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "พยัญชนะ ผ อยู่ในอักษรหมู่ใด",
+    "choices": [
+      "อักษรต่ำ",
+      "ไม่มีหมู่",
+      "อักษรสูง",
+      "อักษรกลาง"
+    ],
+    "answer": "อักษรสูง",
+    "explanation": "ผ ผึ้ง เป็นอักษรสูง",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-021",
+    "category": "consonant-classes",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำว่า กา ไม่มีเครื่องหมายวรรณยุกต์ มีเสียงวรรณยุกต์ใด",
+    "choices": [
+      "เสียงตรี",
+      "เสียงสามัญ",
+      "เสียงเอก",
+      "เสียงโท"
+    ],
+    "answer": "เสียงสามัญ",
+    "explanation": "กา เป็นอักษรกลาง คำเป็น และไม่มีรูปวรรณยุกต์ จึงเป็นเสียงสามัญ",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-022",
+    "category": "consonant-classes",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า ก่า ใช้รูปวรรณยุกต์ใด",
+    "choices": [
+      "ไม้เอก",
+      "ไม้โท",
+      "ไม้ตรี",
+      "ไม้จัตวา"
+    ],
+    "answer": "ไม้เอก",
+    "explanation": "ไม้เอกมีรูปร่าง ่ เช่น ก่า",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-023",
+    "category": "consonant-classes",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า ก้า ใช้รูปวรรณยุกต์ใด",
+    "choices": [
+      "ไม้เอก",
+      "ไม้จัตวา",
+      "ไม้ตรี",
+      "ไม้โท"
+    ],
+    "answer": "ไม้โท",
+    "explanation": "ไม้โทมีรูปร่าง ้ เช่น ก้า",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-024",
+    "category": "consonant-classes",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า ก๊า ใช้รูปวรรณยุกต์ใด",
+    "choices": [
+      "ไม้โท",
+      "ไม้จัตวา",
+      "ไม้ตรี",
+      "ไม้เอก"
+    ],
+    "answer": "ไม้ตรี",
+    "explanation": "ไม้ตรีมีรูปร่าง ๊ เช่น ก๊า",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-025",
+    "category": "consonant-classes",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า ก๋า ใช้รูปวรรณยุกต์ใด",
+    "choices": [
+      "ไม้ตรี",
+      "ไม้จัตวา",
+      "ไม้เอก",
+      "ไม้โท"
+    ],
+    "answer": "ไม้จัตวา",
+    "explanation": "ไม้จัตวามีรูปร่าง ๋ เช่น ก๋า",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-026",
+    "category": "consonant-classes",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "อักษรกลางมีพยัญชนะใดเป็นตัวอย่าง",
+    "choices": [
+      "ฎ",
+      "ข",
+      "ฉ",
+      "ผ"
+    ],
+    "answer": "ฎ",
+    "explanation": "ฎ ชฎา เป็นอักษรกลาง",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-027",
+    "category": "consonant-classes",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "อักษรสูงมีพยัญชนะใดเป็นตัวอย่าง",
+    "choices": [
+      "ด",
+      "บ",
+      "ม",
+      "ฐ"
+    ],
+    "answer": "ฐ",
+    "explanation": "ฐ ฐาน เป็นอักษรสูง",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-028",
+    "category": "consonant-classes",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "อักษรต่ำมีพยัญชนะใดเป็นตัวอย่าง",
+    "choices": [
+      "พ",
+      "ฝ",
+      "จ",
+      "ป"
+    ],
+    "answer": "พ",
+    "explanation": "พ พาน เป็นอักษรต่ำ",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-029",
+    "category": "consonant-classes",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "อักษรกลางมีทั้งหมดกี่ตัว",
+    "choices": [
+      "7 ตัว",
+      "9 ตัว",
+      "14 ตัว",
+      "11 ตัว"
+    ],
+    "answer": "9 ตัว",
+    "explanation": "อักษรกลางมี 9 ตัว ได้แก่ ก จ ฎ ฏ ด ต บ ป อ",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-030",
+    "category": "consonant-classes",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "ข้อใดเป็นกลุ่มอักษรสูงทั้งหมด",
+    "choices": [
+      "ค ง น ม",
+      "ก จ ด ต",
+      "ข ฉ ถ ผ",
+      "บ ป อ ด"
+    ],
+    "answer": "ข ฉ ถ ผ",
+    "explanation": "กลุ่มอักษรสูงมี ข ฉ ถ ผ และพยัญชนะอื่นตามบัญชีอักษรสูง",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-031",
+    "category": "consonant-classes",
+    "difficulty": 1,
+    "type": "true-false",
+    "question": "ข้อความ “ข เป็นอักษรสูง” ถูกต้องหรือไม่",
+    "choices": [
+      "ถูก",
+      "ผิด"
+    ],
+    "answer": "ถูก",
+    "explanation": "ข ไข่ อยู่ในกลุ่มอักษรสูง",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-032",
+    "category": "consonant-classes",
+    "difficulty": 1,
+    "type": "true-false",
+    "question": "ข้อความ “ค เป็นอักษรกลาง” ถูกต้องหรือไม่",
+    "choices": [
+      "ถูก",
+      "ผิด"
+    ],
+    "answer": "ผิด",
+    "explanation": "ค ควาย เป็นอักษรต่ำ ไม่ใช่อักษรกลาง",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-033",
+    "category": "consonant-classes",
+    "difficulty": 2,
+    "type": "fill-blank",
+    "question": "เติมคำ: ก๋า ใช้รูปวรรณยุกต์ไม้_____",
+    "choices": [
+      "เอก",
+      "ตรี",
+      "จัตวา",
+      "โท"
+    ],
+    "answer": "จัตวา",
+    "explanation": "ไม้จัตวามีรูป ๋ เช่น ก๋า",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "consonant-classes-034",
+    "category": "consonant-classes",
+    "difficulty": 3,
+    "type": "matching",
+    "question": "จับคู่พยัญชนะกับหมู่อักษรให้ถูกต้อง",
+    "choices": [
+      "ค–อักษรกลาง",
+      "ด–อักษรสูง",
+      "ผ–อักษรสูง",
+      "บ–อักษรต่ำ"
+    ],
+    "answer": "ผ–อักษรสูง",
+    "explanation": "ผ ผึ้ง เป็นอักษรสูง ส่วน ด และ บ เป็นอักษรกลาง และ ค เป็นอักษรต่ำ",
+    "tags": [
+      "consonant-classes",
+      "ป4",
+      "ป5"
+    ]
+  }
+]

@@ -1,0 +1,660 @@
+[
+  {
+    "id": "final-consonants-001",
+    "category": "final-consonants",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า นก อยู่ในมาตราตัวสะกดใด",
+    "choices": [
+      "แม่กด",
+      "แม่กง",
+      "แม่กก",
+      "แม่กบ"
+    ],
+    "answer": "แม่กก",
+    "explanation": "นก มี ก เป็นตัวสะกด อยู่ในแม่กก",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-002",
+    "category": "final-consonants",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า รถ อยู่ในมาตราตัวสะกดใด",
+    "choices": [
+      "แม่กด",
+      "แม่กบ",
+      "แม่กก",
+      "แม่กน"
+    ],
+    "answer": "แม่กด",
+    "explanation": "รถ มีเสียงตัวสะกด ต อยู่ในแม่กด",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-003",
+    "category": "final-consonants",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า ภาพ อยู่ในมาตราตัวสะกดใด",
+    "choices": [
+      "แม่กก",
+      "แม่กม",
+      "แม่กด",
+      "แม่กบ"
+    ],
+    "answer": "แม่กบ",
+    "explanation": "ภาพ ออกเสียงตัวสะกด บ อยู่ในแม่กบ",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-004",
+    "category": "final-consonants",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า ลิง อยู่ในมาตราตัวสะกดใด",
+    "choices": [
+      "แม่กม",
+      "แม่เกย",
+      "แม่กง",
+      "แม่กน"
+    ],
+    "answer": "แม่กง",
+    "explanation": "ลิง มี ง เป็นตัวสะกด อยู่ในแม่กง",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-005",
+    "category": "final-consonants",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า บ้าน อยู่ในมาตราตัวสะกดใด",
+    "choices": [
+      "แม่กด",
+      "แม่กน",
+      "แม่กง",
+      "แม่กม"
+    ],
+    "answer": "แม่กน",
+    "explanation": "บ้าน มี น เป็นเสียงตัวสะกด อยู่ในแม่กน",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-006",
+    "category": "final-consonants",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า ลม อยู่ในมาตราตัวสะกดใด",
+    "choices": [
+      "แม่กม",
+      "แม่กน",
+      "แม่กง",
+      "แม่เกอว"
+    ],
+    "answer": "แม่กม",
+    "explanation": "ลม มี ม เป็นตัวสะกด อยู่ในแม่กม",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-007",
+    "category": "final-consonants",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า เลย อยู่ในมาตราตัวสะกดใด",
+    "choices": [
+      "แม่เกอว",
+      "แม่กม",
+      "แม่กน",
+      "แม่เกย"
+    ],
+    "answer": "แม่เกย",
+    "explanation": "เลย มีเสียง ย เป็นตัวสะกด อยู่ในแม่เกย",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-008",
+    "category": "final-consonants",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า ดาว อยู่ในมาตราตัวสะกดใด",
+    "choices": [
+      "แม่เกอว",
+      "แม่กง",
+      "แม่กบ",
+      "แม่เกย"
+    ],
+    "answer": "แม่เกอว",
+    "explanation": "ดาว มีเสียง ว เป็นตัวสะกด อยู่ในแม่เกอว",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-009",
+    "category": "final-consonants",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำใดอยู่ในแม่กก",
+    "choices": [
+      "บ้าน",
+      "สุข",
+      "ดาว",
+      "ลม"
+    ],
+    "answer": "สุข",
+    "explanation": "สุข ออกเสียงตัวสะกด ก จึงอยู่ในแม่กก",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-010",
+    "category": "final-consonants",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำใดอยู่ในแม่กด",
+    "choices": [
+      "ภาพ",
+      "กาง",
+      "โอกาส",
+      "ลิง"
+    ],
+    "answer": "โอกาส",
+    "explanation": "โอกาส ลงท้ายด้วย ส ซึ่งออกเสียงตัวสะกด ต",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-011",
+    "category": "final-consonants",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำใดอยู่ในแม่กบ",
+    "choices": [
+      "ลม",
+      "กาง",
+      "นก",
+      "รูป"
+    ],
+    "answer": "รูป",
+    "explanation": "รูป ลงท้ายด้วย ป ซึ่งออกเสียงตัวสะกด บ",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-012",
+    "category": "final-consonants",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำใดอยู่ในแม่กน",
+    "choices": [
+      "อาหาร",
+      "ดาว",
+      "ลม",
+      "นก"
+    ],
+    "answer": "อาหาร",
+    "explanation": "อาหาร ลงท้ายด้วย ร ซึ่งออกเสียงตัวสะกด น",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-013",
+    "category": "final-consonants",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำว่า เมฆ อยู่ในมาตราใด",
+    "choices": [
+      "แม่กด",
+      "แม่กก",
+      "แม่กง",
+      "แม่กน"
+    ],
+    "answer": "แม่กก",
+    "explanation": "ฆ ที่อยู่ท้ายคำออกเสียงตัวสะกด ก",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-014",
+    "category": "final-consonants",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำว่า บท อยู่ในมาตราใด",
+    "choices": [
+      "แม่กบ",
+      "แม่กก",
+      "แม่กด",
+      "แม่กม"
+    ],
+    "answer": "แม่กด",
+    "explanation": "ท ทหารท้ายคำออกเสียงตัวสะกด ต",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-015",
+    "category": "final-consonants",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำว่า ลาภ อยู่ในมาตราใด",
+    "choices": [
+      "แม่กด",
+      "แม่กน",
+      "แม่กก",
+      "แม่กบ"
+    ],
+    "answer": "แม่กบ",
+    "explanation": "ภ สำเภาท้ายคำออกเสียงตัวสะกด บ",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-016",
+    "category": "final-consonants",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำใดมีตัวสะกดตรงตามมาตราแม่กง",
+    "choices": [
+      "กาง",
+      "ภาพ",
+      "รถ",
+      "สุข"
+    ],
+    "answer": "กาง",
+    "explanation": "กาง ใช้ ง เป็นตัวสะกดตรงตามแม่กง",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-017",
+    "category": "final-consonants",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "คำใดมีตัวสะกดไม่ตรงตามมาตราแม่กน",
+    "choices": [
+      "นอน",
+      "ขน",
+      "พร",
+      "กิน"
+    ],
+    "answer": "พร",
+    "explanation": "ร ท้ายคำออกเสียง น จึงไม่ตรงรูปตัวสะกดแม่กน",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-018",
+    "category": "final-consonants",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "คำใดอยู่ในแม่กกแต่ใช้ตัวสะกดไม่ใช่ ก",
+    "choices": [
+      "เลข",
+      "ปาก",
+      "นก",
+      "โลก"
+    ],
+    "answer": "เลข",
+    "explanation": "ข ในคำว่า เลข ออกเสียงตัวสะกด ก",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-019",
+    "category": "final-consonants",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "ตัวสะกดในคำว่า กิจ เป็นเสียงใด",
+    "choices": [
+      "เสียง ก",
+      "เสียง ง",
+      "เสียง บ",
+      "เสียง ต"
+    ],
+    "answer": "เสียง ต",
+    "explanation": "จ ท้ายคำออกเสียงเหมือน ต อยู่ในแม่กด",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-020",
+    "category": "final-consonants",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "ตัวสะกดในคำว่า ลาภ เป็นเสียงใด",
+    "choices": [
+      "เสียง ด",
+      "เสียง น",
+      "เสียง บ",
+      "เสียง ก"
+    ],
+    "answer": "เสียง บ",
+    "explanation": "ภ ท้ายคำออกเสียงเหมือน บ อยู่ในแม่กบ",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-021",
+    "category": "final-consonants",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "ตัวสะกดในคำว่า กว้าง เป็นเสียงใด",
+    "choices": [
+      "เสียง ว",
+      "เสียง ง",
+      "เสียง น",
+      "เสียง ม"
+    ],
+    "answer": "เสียง ง",
+    "explanation": "ง ในคำว่า กว้าง เป็นเสียงตัวสะกดแม่กง",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-022",
+    "category": "final-consonants",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำใดมีตัวสะกดแม่กม",
+    "choices": [
+      "ยิ้ม",
+      "นก",
+      "รถ",
+      "ดาว"
+    ],
+    "answer": "ยิ้ม",
+    "explanation": "ยิ้ม มี ม เป็นตัวสะกด",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-023",
+    "category": "final-consonants",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำใดมีตัวสะกดแม่เกย",
+    "choices": [
+      "ถุง",
+      "ถ้ำ",
+      "ถ่าน",
+      "ถ้วย"
+    ],
+    "answer": "ถ้วย",
+    "explanation": "ถ้วย มีเสียง ย เป็นตัวสะกด",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-024",
+    "category": "final-consonants",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำใดมีตัวสะกดแม่เกอว",
+    "choices": [
+      "แก้ม",
+      "แกน",
+      "แก้ว",
+      "แกง"
+    ],
+    "answer": "แก้ว",
+    "explanation": "แก้ว มีเสียง ว เป็นตัวสะกด",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-025",
+    "category": "final-consonants",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า กิน อยู่ในมาตราใด",
+    "choices": [
+      "แม่กบ",
+      "แม่กน",
+      "แม่กก",
+      "แม่กง"
+    ],
+    "answer": "แม่กน",
+    "explanation": "กิน มี น เป็นตัวสะกด",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-026",
+    "category": "final-consonants",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า มุม อยู่ในมาตราใด",
+    "choices": [
+      "แม่กม",
+      "แม่กน",
+      "แม่กด",
+      "แม่เกย"
+    ],
+    "answer": "แม่กม",
+    "explanation": "มุม มี ม เป็นตัวสะกด",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-027",
+    "category": "final-consonants",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "ข้อใดเป็นคำในแม่กดทั้งหมด",
+    "choices": [
+      "นก สุข เมฆ",
+      "รูป ภาพ ลาภ",
+      "ลิง กาง ทาง",
+      "รถ บท กิจ"
+    ],
+    "answer": "รถ บท กิจ",
+    "explanation": "รถ บท และ กิจ ออกเสียงตัวสะกด ต",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-028",
+    "category": "final-consonants",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "ข้อใดเป็นคำในแม่กบทั้งหมด",
+    "choices": [
+      "รูป ภาพ ลาภ",
+      "รถ บท กิจ",
+      "ลิง กาง ทาง",
+      "นก สุข เมฆ"
+    ],
+    "answer": "รูป ภาพ ลาภ",
+    "explanation": "รูป ภาพ ลาภ ออกเสียงตัวสะกด บ",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-029",
+    "category": "final-consonants",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำว่า สุนัข อยู่ในมาตราใด",
+    "choices": [
+      "แม่กด",
+      "แม่กก",
+      "แม่กบ",
+      "แม่กน"
+    ],
+    "answer": "แม่กก",
+    "explanation": "ข ท้ายคำออกเสียง ก จึงอยู่ในแม่กก",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-030",
+    "category": "final-consonants",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำใดมีตัวสะกดตรงตามมาตราแม่กน",
+    "choices": [
+      "ลาภ",
+      "เลข",
+      "ฝน",
+      "เมฆ"
+    ],
+    "answer": "ฝน",
+    "explanation": "ฝน ใช้ น เป็นตัวสะกดตรงตามแม่กน",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-031",
+    "category": "final-consonants",
+    "difficulty": 1,
+    "type": "true-false",
+    "question": "ข้อความ “บ้าน” อยู่ในมาตราแม่กน ถูกต้องหรือไม่",
+    "choices": [
+      "ถูก",
+      "ผิด"
+    ],
+    "answer": "ถูก",
+    "explanation": "บ้าน ลงท้ายด้วย น หนู จัดอยู่ในมาตราแม่กน",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-032",
+    "category": "final-consonants",
+    "difficulty": 2,
+    "type": "fill-blank",
+    "question": "เติมคำ: คำว่า “ภาพ” อยู่ในมาตราแม่ก____",
+    "choices": [
+      "กบ",
+      "กน",
+      "กด",
+      "กก"
+    ],
+    "answer": "กบ",
+    "explanation": "ภาพ ลงท้ายด้วย พ พาน ซึ่งออกเสียงเป็น บ ใบไม้ จัดอยู่ในแม่กบ",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "final-consonants-033",
+    "category": "final-consonants",
+    "difficulty": 3,
+    "type": "matching",
+    "question": "จับคู่คำกับมาตราตัวสะกด",
+    "choices": [
+      "บ้าน–แม่กง",
+      "ภาพ–แม่กด",
+      "นก–แม่กก",
+      "ลิง–แม่กน"
+    ],
+    "answer": "นก–แม่กก",
+    "explanation": "นก ลงท้ายด้วย ก ไก่ จึงอยู่ในมาตราแม่กก",
+    "tags": [
+      "final-consonants",
+      "ป4",
+      "ป5"
+    ]
+  }
+]

@@ -1,0 +1,656 @@
+[
+  {
+    "id": "spelling-001",
+    "category": "spelling",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "ข้อใดสะกดถูกต้อง",
+    "choices": [
+      "กระเพรา",
+      "กระเพา",
+      "กะเพรา",
+      "กะเพา"
+    ],
+    "answer": "กะเพรา",
+    "explanation": "คำที่ถูกต้องคือ กะเพรา ใช้ ก ไก่ และไม่มี ร แทรกกลางคำ",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-002",
+    "category": "spelling",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำใดสะกดถูกต้อง",
+    "choices": [
+      "อนุญาต",
+      "อนุญาด",
+      "อนุญาติ",
+      "อนุญาตร์"
+    ],
+    "answer": "อนุญาต",
+    "explanation": "อนุญาต ไม่มีสระอิท้ายคำ",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-003",
+    "category": "spelling",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "ข้อใดเขียนถูกต้อง",
+    "choices": [
+      "สังเกตุ",
+      "สังเกตต์",
+      "สังเกด",
+      "สังเกต"
+    ],
+    "answer": "สังเกต",
+    "explanation": "สังเกต เขียนด้วย ต เต่า ไม่เติมสระอุท้ายคำ",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-004",
+    "category": "spelling",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำใดสะกดถูกต้อง",
+    "choices": [
+      "โอกาด",
+      "โอการ",
+      "โอกาส",
+      "โอกาศ"
+    ],
+    "answer": "โอกาส",
+    "explanation": "โอกาส ใช้ ส เสือ เป็นตัวสะกด",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-005",
+    "category": "spelling",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "ข้อใดเขียนถูกต้อง",
+    "choices": [
+      "ระเอียต",
+      "ละเอียด",
+      "ระเอียด",
+      "ละเอียต"
+    ],
+    "answer": "ละเอียด",
+    "explanation": "ละเอียด ขึ้นต้นด้วย ล ลิง",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-006",
+    "category": "spelling",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำใดสะกดถูกต้อง",
+    "choices": [
+      "กิจกรรม",
+      "กิจจกรรม",
+      "กิจกำ",
+      "กิจกรรมม์"
+    ],
+    "answer": "กิจกรรม",
+    "explanation": "กิจกรรม มี กิจ และ กรรม ต่อกัน",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-007",
+    "category": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "ข้อใดสะกดถูกต้อง",
+    "choices": [
+      "ประโยช",
+      "ประโยศน์",
+      "ประโยชน์์",
+      "ประโยชน์"
+    ],
+    "answer": "ประโยชน์",
+    "explanation": "ประโยชน์ ลงท้ายด้วย ชน์",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-008",
+    "category": "spelling",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำใดเขียนถูกต้อง",
+    "choices": [
+      "สะอาด",
+      "สะอาดด์",
+      "สอาดด์",
+      "สอาด"
+    ],
+    "answer": "สะอาด",
+    "explanation": "สะอาด มีสระอะนำหน้า อ",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-009",
+    "category": "spelling",
+    "difficulty": 1,
+    "type": "true-false",
+    "question": "ข้อความ “จักรยาน” สะกดถูกต้องหรือไม่",
+    "choices": [
+      "ถูก",
+      "ผิด"
+    ],
+    "answer": "ถูก",
+    "explanation": "จักรยาน เป็นคำที่สะกดถูกต้อง มี ร ก่อน ย",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-010",
+    "category": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำใดสะกดถูกต้อง",
+    "choices": [
+      "โทรศัพย์",
+      "โทรสับ",
+      "โทรศัพท์",
+      "โทระศัพท์"
+    ],
+    "answer": "โทรศัพท์",
+    "explanation": "โทรศัพท์ ใช้ ศัพท์ ลงท้าย",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-011",
+    "category": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "ข้อใดเขียนถูกต้อง",
+    "choices": [
+      "มหัศจรร",
+      "มหัศจรรย์ย์",
+      "มหัศจัน",
+      "มหัศจรรย์"
+    ],
+    "answer": "มหัศจรรย์",
+    "explanation": "มหัศจรรย์ มี รร และการันต์ที่ ย",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-012",
+    "category": "spelling",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำใดสะกดถูกต้อง",
+    "choices": [
+      "พัฒนา",
+      "พัดทะนา",
+      "พัฒณ์นา",
+      "พัฒณา"
+    ],
+    "answer": "พัฒนา",
+    "explanation": "พัฒนา ใช้ ฒ เฒ่า",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-013",
+    "category": "spelling",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "ข้อใดสะกดถูกต้อง",
+    "choices": [
+      "อนาคด",
+      "อนาคต",
+      "อะนาคต",
+      "อนาคตต์"
+    ],
+    "answer": "อนาคต",
+    "explanation": "อนาคต ใช้ ต เต่า เป็นตัวสะกด",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-014",
+    "category": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำใดเขียนถูกต้อง",
+    "choices": [
+      "พยากรณ์์",
+      "พยากร",
+      "พยากรณ์",
+      "พญากรณ์"
+    ],
+    "answer": "พยากรณ์",
+    "explanation": "พยากรณ์ มี ณ์ การันต์",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-015",
+    "category": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "ข้อใดสะกดถูกต้อง",
+    "choices": [
+      "ปรากด",
+      "ปรากฏ์",
+      "ปรากฎ",
+      "ปรากฏ"
+    ],
+    "answer": "ปรากฏ",
+    "explanation": "ปรากฏ ใช้ ฏ ปฏัก",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-016",
+    "category": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำใดเขียนถูกต้อง",
+    "choices": [
+      "กฎหมาย",
+      "กฎหมาย์",
+      "กดหมาย",
+      "กฏหมาย"
+    ],
+    "answer": "กฎหมาย",
+    "explanation": "กฎหมาย ใช้ ก ไก่ ไม่ใช่ กฎ",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-017",
+    "category": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "ข้อใดสะกดถูกต้อง",
+    "choices": [
+      "ศรีษะ",
+      "ศีระษะ",
+      "ศีรษะ",
+      "สีรษะ"
+    ],
+    "answer": "ศีรษะ",
+    "explanation": "ศีรษะ เป็นคำที่ใช้ ศ และ ษ",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-018",
+    "category": "spelling",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำใดเขียนถูกต้อง",
+    "choices": [
+      "ศึกษา",
+      "ศึกสา",
+      "สึกษา",
+      "ศึกษาร์"
+    ],
+    "answer": "ศึกษา",
+    "explanation": "ศึกษา ใช้ ศ ศาลา",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-019",
+    "category": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "ข้อใดสะกดถูกต้อง",
+    "choices": [
+      "สับดาห์",
+      "สัปดาร์",
+      "สัปดา",
+      "สัปดาห์"
+    ],
+    "answer": "สัปดาห์",
+    "explanation": "สัปดาห์ มี ป ปลา และ ห์ การันต์",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-020",
+    "category": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำใดเขียนถูกต้อง",
+    "choices": [
+      "สัมภาษ",
+      "สัมภาษน์",
+      "สัมภาษณ์",
+      "สัมพาษณ์"
+    ],
+    "answer": "สัมภาษณ์",
+    "explanation": "สัมภาษณ์ ใช้ ภ สำเภา และ ณ์ การันต์",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-021",
+    "category": "spelling",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "ข้อใดสะกดถูกต้อง",
+    "choices": [
+      "ทะเลสาด",
+      "ทะเลสาบ",
+      "ทะเลสาป",
+      "ทะเลสาพ"
+    ],
+    "answer": "ทะเลสาบ",
+    "explanation": "ทะเลสาบ ใช้ บ ใบไม้เป็นตัวสะกด",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-022",
+    "category": "spelling",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำใดเขียนถูกต้อง",
+    "choices": [
+      "มะพร้าว",
+      "มะพ้าว",
+      "มะพราว",
+      "มะพะร้าว"
+    ],
+    "answer": "มะพร้าว",
+    "explanation": "มะพร้าว มี พร ควบกล้ำและไม้โท",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-023",
+    "category": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "ข้อใดสะกดถูกต้อง",
+    "choices": [
+      "ประนีต",
+      "ประณีด",
+      "ประนีด",
+      "ประณีต"
+    ],
+    "answer": "ประณีต",
+    "explanation": "ประณีต ใช้ ณ เณร และ ต เต่า",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-024",
+    "category": "spelling",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "คำใดเขียนถูกต้อง",
+    "choices": [
+      "ผลิตภัณท์",
+      "ผลิตภัณฑ",
+      "ผลิตภัณฑ์",
+      "ผลิตภันฑ์"
+    ],
+    "answer": "ผลิตภัณฑ์",
+    "explanation": "ผลิตภัณฑ์ มี ฑ และ ฑ์ การันต์",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-025",
+    "category": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "ข้อใดสะกดถูกต้อง",
+    "choices": [
+      "ภูมิประเทด",
+      "ภูมิประเทศ",
+      "พูมิประเทศ",
+      "ภูมิประเทส"
+    ],
+    "answer": "ภูมิประเทศ",
+    "explanation": "ภูมิประเทศ ใช้ ภูมิ และ ประเทศ",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-026",
+    "category": "spelling",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำใดเขียนถูกต้อง",
+    "choices": [
+      "รสชาติ",
+      "รสชาด",
+      "รสชาต",
+      "รดชาติ"
+    ],
+    "answer": "รสชาติ",
+    "explanation": "รสชาติ ใช้ ต เต่า เป็นตัวสะกด",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-027",
+    "category": "spelling",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "ข้อใดสะกดถูกต้อง",
+    "choices": [
+      "กาละเทศะ",
+      "กาลเทสะ",
+      "กานเทศะ",
+      "กาลเทศะ"
+    ],
+    "answer": "กาลเทศะ",
+    "explanation": "กาลเทศะ หมายถึง เวลาและสถานที่ที่เหมาะสม",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-028",
+    "category": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำใดเขียนถูกต้อง",
+    "choices": [
+      "สาธารณะ",
+      "สาธารณ",
+      "สาธารณะห์",
+      "สาธารนะ"
+    ],
+    "answer": "สาธารณะ",
+    "explanation": "สาธารณะ ใช้ ณ เณร",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-029",
+    "category": "spelling",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "ข้อใดสะกดถูกต้อง",
+    "choices": [
+      "บรรยากาส",
+      "บรรยากาศ",
+      "บรรยากาศ์",
+      "บรรยากาด"
+    ],
+    "answer": "บรรยากาศ",
+    "explanation": "บรรยากาศ ลงท้ายด้วย ศ",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-030",
+    "category": "spelling",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "คำใดเขียนถูกต้อง",
+    "choices": [
+      "ขะมักเขะม้น",
+      "ขมักเขม้น",
+      "ขะมักเขม้น",
+      "ขะมักเขมน"
+    ],
+    "answer": "ขะมักเขม้น",
+    "explanation": "ขะมักเขม้น หมายถึง ตั้งใจทำอย่างแข็งขัน",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-031",
+    "category": "spelling",
+    "difficulty": 1,
+    "type": "true-false",
+    "question": "คำว่า “สังเกต” สะกดถูกต้องหรือไม่",
+    "choices": [
+      "ถูก",
+      "ผิด"
+    ],
+    "answer": "ถูก",
+    "explanation": "สังเกต สะกดด้วย ต เต่า และไม่เติมสระอุท้ายคำ",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-032",
+    "category": "spelling",
+    "difficulty": 2,
+    "type": "true-false",
+    "question": "คำว่า “อนุญาติ” สะกดถูกต้องหรือไม่",
+    "choices": [
+      "ถูก",
+      "ผิด"
+    ],
+    "answer": "ผิด",
+    "explanation": "รูปที่ถูกต้องคือ อนุญาต ไม่มีสระอิท้ายคำ",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "spelling-033",
+    "category": "spelling",
+    "difficulty": 2,
+    "type": "fill-blank",
+    "question": "เติมคำในช่องว่าง: นักเรียนควรขอ_____ก่อนใช้ของผู้อื่น",
+    "choices": [
+      "อนุญาติ",
+      "อนุญาตร์",
+      "อนุญาต",
+      "อนุญาด"
+    ],
+    "answer": "อนุญาต",
+    "explanation": "อนุญาต เป็นคำที่เขียนถูกต้อง ใช้เมื่อต้องขอความยินยอม",
+    "tags": [
+      "spelling",
+      "ป4",
+      "ป5"
+    ]
+  }
+]

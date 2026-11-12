@@ -1,0 +1,638 @@
+[
+  {
+    "id": "sentence-structure-001",
+    "category": "sentence-structure",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "ประธานของประโยค น้องกินข้าว คือคำใด",
+    "choices": [
+      "กิน",
+      "น้องกิน",
+      "น้อง",
+      "ข้าว"
+    ],
+    "answer": "น้อง",
+    "explanation": "น้อง เป็นผู้ทำกริยาในประโยค",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "sentence-structure-002",
+    "category": "sentence-structure",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "กริยาของประโยค แม่ปลูกต้นไม้ คือคำใด",
+    "choices": [
+      "ปลูก",
+      "ต้นไม้",
+      "แม่",
+      "แม่ปลูก"
+    ],
+    "answer": "ปลูก",
+    "explanation": "ปลูก บอกการกระทำของแม่",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "sentence-structure-003",
+    "category": "sentence-structure",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "กรรมของประโยค พ่ออ่านหนังสือ คือคำใด",
+    "choices": [
+      "พ่อ",
+      "พ่ออ่าน",
+      "อ่าน",
+      "หนังสือ"
+    ],
+    "answer": "หนังสือ",
+    "explanation": "หนังสือ เป็นสิ่งที่ถูกอ่าน จึงเป็นกรรม",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "sentence-structure-004",
+    "category": "sentence-structure",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "ประธานของประโยค สุนัขเห่าเสียงดัง คือคำใด",
+    "choices": [
+      "เสียงดัง",
+      "ดัง",
+      "สุนัข",
+      "เห่า"
+    ],
+    "answer": "สุนัข",
+    "explanation": "สุนัข เป็นผู้แสดงอาการเห่า",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "sentence-structure-005",
+    "category": "sentence-structure",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "กริยาของประโยค นักเรียนเขียนจดหมาย คือคำใด",
+    "choices": [
+      "นักเรียนเขียน",
+      "เขียน",
+      "นักเรียน",
+      "จดหมาย"
+    ],
+    "answer": "เขียน",
+    "explanation": "เขียน บอกการกระทำของนักเรียน",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "sentence-structure-006",
+    "category": "sentence-structure",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "กรรมของประโยค คุณครูสอนภาษาไทย คือคำใด",
+    "choices": [
+      "ภาษาไทย",
+      "คุณครู",
+      "สอน",
+      "คุณครูสอน"
+    ],
+    "answer": "ภาษาไทย",
+    "explanation": "ภาษาไทย เป็นสิ่งที่ถูกสอน",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "sentence-structure-007",
+    "category": "sentence-structure",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "ประธานของประโยค นกบินบนท้องฟ้า คือคำใด",
+    "choices": [
+      "บิน",
+      "บนท้องฟ้า",
+      "ท้องฟ้า",
+      "นก"
+    ],
+    "answer": "นก",
+    "explanation": "นก เป็นผู้ทำกริยาบิน",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "sentence-structure-008",
+    "category": "sentence-structure",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "กริยาของประโยค เด็ก ๆ เล่นฟุตบอล คือคำใด",
+    "choices": [
+      "เล่น",
+      "ฟุตบอล",
+      "เด็ก ๆ เล่น",
+      "เด็ก ๆ"
+    ],
+    "answer": "เล่น",
+    "explanation": "เล่น บอกการกระทำ",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "sentence-structure-009",
+    "category": "sentence-structure",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "กรรมของประโยค พี่ล้างจาน คือคำใด",
+    "choices": [
+      "พี่",
+      "จาน",
+      "พี่ล้าง",
+      "ล้าง"
+    ],
+    "answer": "จาน",
+    "explanation": "จาน เป็นสิ่งที่ถูกล้าง",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "sentence-structure-010",
+    "category": "sentence-structure",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "ประโยคใดเรียงคำได้ถูกต้อง",
+    "choices": [
+      "ทำอาหารคุณยาย",
+      "อาหารคุณยายทำ",
+      "คุณยายทำอาหาร",
+      "ยายคุณอาหารทำ"
+    ],
+    "answer": "คุณยายทำอาหาร",
+    "explanation": "ภาษาไทยมักเรียงประโยคเป็น ประธาน + กริยา + กรรม",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "sentence-structure-011",
+    "category": "sentence-structure",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "ประโยคใดเรียงคำได้ถูกต้อง",
+    "choices": [
+      "หนังสือนักเรียนอ่าน",
+      "นักเรียนหนังสืออ่าน",
+      "อ่านนักเรียนหนังสือ",
+      "นักเรียนอ่านหนังสือ"
+    ],
+    "answer": "นักเรียนอ่านหนังสือ",
+    "explanation": "นักเรียนเป็นประธาน อ่านเป็นกริยา หนังสือเป็นกรรม",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "sentence-structure-012",
+    "category": "sentence-structure",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "ประโยคใดมีกรรม",
+    "choices": [
+      "พี่เตะลูกบอล",
+      "น้องยิ้ม",
+      "แมวนอน",
+      "ฝนตก"
+    ],
+    "answer": "พี่เตะลูกบอล",
+    "explanation": "ลูกบอลเป็นกรรมที่ถูกเตะ",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "sentence-structure-013",
+    "category": "sentence-structure",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "ประโยคใดไม่มีกรรม",
+    "choices": [
+      "แม่ทำกับข้าว",
+      "เด็กหัวเราะ",
+      "ฉันอ่านนิทาน",
+      "พ่อซ่อมจักรยาน"
+    ],
+    "answer": "เด็กหัวเราะ",
+    "explanation": "หัวเราะ เป็นกริยาที่ไม่ต้องมีกรรมในประโยคนี้",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "sentence-structure-014",
+    "category": "sentence-structure",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "ในประโยค มะลิรดน้ำต้นไม้ คำว่า มะลิ ทำหน้าที่ใด",
+    "choices": [
+      "กรรม",
+      "กริยา",
+      "ประธาน",
+      "คำเชื่อม"
+    ],
+    "answer": "ประธาน",
+    "explanation": "มะลิ เป็นผู้ทำกริยารด",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "sentence-structure-015",
+    "category": "sentence-structure",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "ในประโยค มะลิรดน้ำต้นไม้ คำว่า รด ทำหน้าที่ใด",
+    "choices": [
+      "กรรม",
+      "คำขยาย",
+      "ประธาน",
+      "กริยา"
+    ],
+    "answer": "กริยา",
+    "explanation": "รด บอกการกระทำ",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "sentence-structure-016",
+    "category": "sentence-structure",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "ในประโยค มะลิรดน้ำต้นไม้ คำว่า ต้นไม้ ทำหน้าที่ใด",
+    "choices": [
+      "กรรม",
+      "คำเชื่อม",
+      "กริยา",
+      "ประธาน"
+    ],
+    "answer": "กรรม",
+    "explanation": "ต้นไม้ เป็นสิ่งที่ถูกประธานรดน้ำ",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "sentence-structure-017",
+    "category": "sentence-structure",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "ข้อใดเป็นประโยคบอกเล่า",
+    "choices": [
+      "วันนี้อากาศสดใสไหม",
+      "ช่วยปิดประตูด้วย",
+      "วันนี้อากาศสดใส",
+      "อย่าวิ่งในห้อง"
+    ],
+    "answer": "วันนี้อากาศสดใส",
+    "explanation": "ประโยคบอกเล่าใช้แจ้งเรื่องราวหรือข้อมูล",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "sentence-structure-018",
+    "category": "sentence-structure",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "ข้อใดเป็นประโยคคำถาม",
+    "choices": [
+      "เธอชอบอ่านหนังสือหรือไม่",
+      "โปรดอ่านหนังสือ",
+      "ฉันชอบอ่านหนังสือ",
+      "อย่าส่งเสียงดัง"
+    ],
+    "answer": "เธอชอบอ่านหนังสือหรือไม่",
+    "explanation": "ประโยคนี้ถามเพื่อขอคำตอบ",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "sentence-structure-019",
+    "category": "sentence-structure",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "ข้อใดเป็นประโยคคำสั่ง",
+    "choices": [
+      "วันนี้เข้าแถว",
+      "ฉันชอบเข้าแถว",
+      "เข้าแถวที่ไหน",
+      "จงเข้าแถวให้เรียบร้อย"
+    ],
+    "answer": "จงเข้าแถวให้เรียบร้อย",
+    "explanation": "จง เป็นคำที่ใช้สั่งหรือขอให้ทำ",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "sentence-structure-020",
+    "category": "sentence-structure",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "ข้อใดเป็นประโยคขอร้อง",
+    "choices": [
+      "ใครเก็บหนังสือ",
+      "ห้ามเก็บหนังสือ",
+      "กรุณาช่วยเก็บหนังสือด้วย",
+      "เธอเก็บหนังสือแล้ว"
+    ],
+    "answer": "กรุณาช่วยเก็บหนังสือด้วย",
+    "explanation": "กรุณา ช่วยทำให้ข้อความสุภาพเป็นคำขอร้อง",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "sentence-structure-021",
+    "category": "sentence-structure",
+    "difficulty": 2,
+    "type": "order",
+    "question": "เรียงคำให้เป็นประโยค: (ทุกเช้า / ออกกำลังกาย / ฉัน)",
+    "choices": [
+      "ฉัน",
+      "ออกกำลังกาย",
+      "ทุกเช้า"
+    ],
+    "answer": "ฉัน|ออกกำลังกาย|ทุกเช้า",
+    "explanation": "เรียงเป็น ฉัน ออกกำลังกาย ทุกเช้า",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "sentence-structure-022",
+    "category": "sentence-structure",
+    "difficulty": 2,
+    "type": "order",
+    "question": "เรียงคำให้เป็นประโยค: (หนังสือ / อ่าน / พี่)",
+    "choices": [
+      "หนังสือ",
+      "พี่",
+      "อ่าน"
+    ],
+    "answer": "พี่|อ่าน|หนังสือ",
+    "explanation": "เรียงเป็น พี่ อ่าน หนังสือ ตามลำดับประธาน กริยา กรรม",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "sentence-structure-023",
+    "category": "sentence-structure",
+    "difficulty": 2,
+    "type": "order",
+    "question": "เรียงคำให้เป็นประโยค: (ดอกไม้ / รดน้ำ / แม่)",
+    "choices": [
+      "ดอกไม้",
+      "รดน้ำ",
+      "แม่"
+    ],
+    "answer": "แม่|รดน้ำ|ดอกไม้",
+    "explanation": "เรียงเป็น แม่ รดน้ำ ดอกไม้",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "sentence-structure-024",
+    "category": "sentence-structure",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "ประโยคใดมีประธานอยู่ต้นประโยค",
+    "choices": [
+      "การบ้านทำของน้อง",
+      "ทำของน้องการบ้าน",
+      "น้องทำการบ้าน",
+      "ทำการบ้านน้อง"
+    ],
+    "answer": "น้องทำการบ้าน",
+    "explanation": "น้อง เป็นประธานและอยู่ต้นประโยค",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "sentence-structure-025",
+    "category": "sentence-structure",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "คำว่า หอม ในประโยค ดอกมะลิมีกลิ่นหอม ทำหน้าที่ใด",
+    "choices": [
+      "เป็นคำสันธาน",
+      "ขยายคำนาม",
+      "เป็นประธาน",
+      "เป็นกรรม"
+    ],
+    "answer": "ขยายคำนาม",
+    "explanation": "หอม บอกลักษณะของกลิ่น จึงทำหน้าที่ขยายคำนาม",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "sentence-structure-026",
+    "category": "sentence-structure",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำใดเป็นกรรมในประโยค ฉันซื้อขนมที่ตลาด",
+    "choices": [
+      "ขนม",
+      "ฉัน",
+      "ซื้อ",
+      "ที่ตลาด"
+    ],
+    "answer": "ขนม",
+    "explanation": "ขนม เป็นสิ่งที่ถูกซื้อ",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "sentence-structure-027",
+    "category": "sentence-structure",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "ข้อใดเป็นประโยคสมบูรณ์",
+    "choices": [
+      "น้องกำลัง",
+      "วาดภาพสวย",
+      "ที่สนามเด็กเล่น",
+      "น้องกำลังวาดภาพ"
+    ],
+    "answer": "น้องกำลังวาดภาพ",
+    "explanation": "ประโยคสมบูรณ์มีใจความครบถ้วน",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "sentence-structure-028",
+    "category": "sentence-structure",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "ประโยคใดมีใจความแสดงเหตุผล",
+    "choices": [
+      "ฉันพกร่มเพราะฝนจะตก",
+      "ร่มอยู่หน้าบ้าน",
+      "ใครพกร่ม",
+      "ฉันพกร่มสีแดง"
+    ],
+    "answer": "ฉันพกร่มเพราะฝนจะตก",
+    "explanation": "เพราะ เชื่อมข้อความเหตุผลกับผล",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "sentence-structure-029",
+    "category": "sentence-structure",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "ข้อใดเรียงส่วนประกอบเป็น ประธาน + กริยา + กรรม",
+    "choices": [
+      "ทำ + แม่ + ขนม",
+      "แม่ + ทำ + ขนม",
+      "แม่ + ขนม + ทำ",
+      "ขนม + แม่ + ทำ"
+    ],
+    "answer": "แม่ + ทำ + ขนม",
+    "explanation": "แม่เป็นประธาน ทำเป็นกริยา ขนมเป็นกรรม",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "sentence-structure-030",
+    "category": "sentence-structure",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "ใครเป็นประธานในประโยค คุณพ่อซ่อมจักรยาน",
+    "choices": [
+      "จักรยาน",
+      "ซ่อม",
+      "คุณพ่อ",
+      "คุณพ่อซ่อม"
+    ],
+    "answer": "คุณพ่อ",
+    "explanation": "คุณพ่อ เป็นผู้ทำกริยาซ่อม",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "sentence-structure-031",
+    "category": "sentence-structure",
+    "difficulty": 2,
+    "type": "fill-blank",
+    "question": "เติมคำในช่องว่าง: ฉันหิว_____ จึงกินข้าว",
+    "choices": [
+      "หรือ",
+      "เพราะ",
+      "แต่",
+      "มาก"
+    ],
+    "answer": "มาก",
+    "explanation": "คำว่า มาก ขยายระดับความหิว ทำให้ประโยคสมบูรณ์ว่า “ฉันหิวมาก จึงกินข้าว”",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "sentence-structure-032",
+    "category": "sentence-structure",
+    "difficulty": 1,
+    "type": "order",
+    "question": "เรียงคำให้เป็นประโยคที่ถูกต้อง",
+    "choices": [
+      "อ่าน",
+      "หนังสือ",
+      "น้อง"
+    ],
+    "answer": "น้อง|อ่าน|หนังสือ",
+    "explanation": "เรียงเป็น “น้องอ่านหนังสือ” มีประธาน คือ น้อง กริยา คือ อ่าน และกรรม คือ หนังสือ",
+    "tags": [
+      "sentence-structure",
+      "ป4",
+      "ป5"
+    ]
+  }
+]

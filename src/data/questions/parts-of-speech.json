@@ -1,0 +1,661 @@
+[
+  {
+    "id": "parts-of-speech-001",
+    "category": "parts-of-speech",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า โรงเรียน เป็นคำชนิดใด",
+    "choices": [
+      "คำกริยา",
+      "คำสันธาน",
+      "คำนาม",
+      "คำวิเศษณ์"
+    ],
+    "answer": "คำนาม",
+    "explanation": "โรงเรียน เป็นชื่อสถานที่ จึงเป็นคำนาม",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-002",
+    "category": "parts-of-speech",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า ฉัน เป็นคำชนิดใด",
+    "choices": [
+      "คำสรรพนาม",
+      "คำกริยา",
+      "คำนาม",
+      "คำบุพบท"
+    ],
+    "answer": "คำสรรพนาม",
+    "explanation": "ฉัน ใช้แทนชื่อผู้พูด จึงเป็นคำสรรพนาม",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-003",
+    "category": "parts-of-speech",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า วิ่ง เป็นคำชนิดใด",
+    "choices": [
+      "คำนาม",
+      "คำอุทาน",
+      "คำวิเศษณ์",
+      "คำกริยา"
+    ],
+    "answer": "คำกริยา",
+    "explanation": "วิ่ง บอกอาการหรือการกระทำ จึงเป็นคำกริยา",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-004",
+    "category": "parts-of-speech",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า สวย เป็นคำชนิดใดในประโยค ดอกไม้สวย",
+    "choices": [
+      "คำสรรพนาม",
+      "คำสันธาน",
+      "คำวิเศษณ์",
+      "คำนาม"
+    ],
+    "answer": "คำวิเศษณ์",
+    "explanation": "สวย ขยายลักษณะของดอกไม้ จึงเป็นคำวิเศษณ์",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-005",
+    "category": "parts-of-speech",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำว่า ใต้ เป็นคำชนิดใดในประโยค แมวอยู่ใต้โต๊ะ",
+    "choices": [
+      "คำกริยา",
+      "คำบุพบท",
+      "คำสันธาน",
+      "คำอุทาน"
+    ],
+    "answer": "คำบุพบท",
+    "explanation": "ใต้ แสดงความสัมพันธ์ด้านตำแหน่ง จึงเป็นคำบุพบท",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-006",
+    "category": "parts-of-speech",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า และ เป็นคำชนิดใด",
+    "choices": [
+      "คำสันธาน",
+      "คำกริยา",
+      "คำวิเศษณ์",
+      "คำนาม"
+    ],
+    "answer": "คำสันธาน",
+    "explanation": "และ ใช้เชื่อมคำหรือข้อความ จึงเป็นคำสันธาน",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-007",
+    "category": "parts-of-speech",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า โอ๊ย เป็นคำชนิดใด",
+    "choices": [
+      "คำนาม",
+      "คำสรรพนาม",
+      "คำบุพบท",
+      "คำอุทาน"
+    ],
+    "answer": "คำอุทาน",
+    "explanation": "โอ๊ย ใช้แสดงความรู้สึกหรืออาการ",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-008",
+    "category": "parts-of-speech",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า หนังสือ เป็นคำชนิดใด",
+    "choices": [
+      "คำนาม",
+      "คำสันธาน",
+      "คำอุทาน",
+      "คำกริยา"
+    ],
+    "answer": "คำนาม",
+    "explanation": "หนังสือ เป็นชื่อสิ่งของ จึงเป็นคำนาม",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-009",
+    "category": "parts-of-speech",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า พวกเรา เป็นคำชนิดใด",
+    "choices": [
+      "คำกริยา",
+      "คำสรรพนาม",
+      "คำบุพบท",
+      "คำวิเศษณ์"
+    ],
+    "answer": "คำสรรพนาม",
+    "explanation": "พวกเรา ใช้แทนกลุ่มคน จึงเป็นคำสรรพนาม",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-010",
+    "category": "parts-of-speech",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า อ่าน เป็นคำชนิดใด",
+    "choices": [
+      "คำอุทาน",
+      "คำนาม",
+      "คำกริยา",
+      "คำสันธาน"
+    ],
+    "answer": "คำกริยา",
+    "explanation": "อ่าน บอกการกระทำ จึงเป็นคำกริยา",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-011",
+    "category": "parts-of-speech",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำว่า เร็ว ในประโยค รถวิ่งเร็ว เป็นคำชนิดใด",
+    "choices": [
+      "คำสรรพนาม",
+      "คำบุพบท",
+      "คำนาม",
+      "คำวิเศษณ์"
+    ],
+    "answer": "คำวิเศษณ์",
+    "explanation": "เร็ว ขยายคำกริยา วิ่ง จึงเป็นคำวิเศษณ์",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-012",
+    "category": "parts-of-speech",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำว่า บน ในประโยค วางแก้วบนโต๊ะ เป็นคำชนิดใด",
+    "choices": [
+      "คำบุพบท",
+      "คำอุทาน",
+      "คำกริยา",
+      "คำสันธาน"
+    ],
+    "answer": "คำบุพบท",
+    "explanation": "บน บอกตำแหน่งสัมพันธ์ระหว่างแก้วกับโต๊ะ",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-013",
+    "category": "parts-of-speech",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำว่า แต่ เป็นคำชนิดใด",
+    "choices": [
+      "คำนาม",
+      "คำสันธาน",
+      "คำอุทาน",
+      "คำวิเศษณ์"
+    ],
+    "answer": "คำสันธาน",
+    "explanation": "แต่ ใช้เชื่อมข้อความที่มีความขัดแย้งกัน",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-014",
+    "category": "parts-of-speech",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า เย้ เป็นคำชนิดใด",
+    "choices": [
+      "คำบุพบท",
+      "คำกริยา",
+      "คำอุทาน",
+      "คำสรรพนาม"
+    ],
+    "answer": "คำอุทาน",
+    "explanation": "เย้ แสดงความดีใจ",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-015",
+    "category": "parts-of-speech",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า คุณครู เป็นคำชนิดใด",
+    "choices": [
+      "คำกริยา",
+      "คำสันธาน",
+      "คำสรรพนาม",
+      "คำนาม"
+    ],
+    "answer": "คำนาม",
+    "explanation": "คุณครู เป็นชื่อเรียกบุคคล จึงเป็นคำนาม",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-016",
+    "category": "parts-of-speech",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า เขา ในประโยค เขาเล่นฟุตบอล เป็นคำชนิดใด",
+    "choices": [
+      "คำสรรพนาม",
+      "คำวิเศษณ์",
+      "คำกริยา",
+      "คำนาม"
+    ],
+    "answer": "คำสรรพนาม",
+    "explanation": "เขา ใช้แทนชื่อบุคคล จึงเป็นคำสรรพนาม",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-017",
+    "category": "parts-of-speech",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า นอน เป็นคำชนิดใด",
+    "choices": [
+      "คำนาม",
+      "คำสันธาน",
+      "คำกริยา",
+      "คำบุพบท"
+    ],
+    "answer": "คำกริยา",
+    "explanation": "นอน บอกอาการหรือการกระทำ",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-018",
+    "category": "parts-of-speech",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำว่า มาก ในประโยค ฝนตกมาก เป็นคำชนิดใด",
+    "choices": [
+      "คำวิเศษณ์",
+      "คำนาม",
+      "คำสรรพนาม",
+      "คำอุทาน"
+    ],
+    "answer": "คำวิเศษณ์",
+    "explanation": "มาก ขยายระดับของการตก จึงเป็นคำวิเศษณ์",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-019",
+    "category": "parts-of-speech",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำว่า จาก ในประโยค เดินทางจากบ้าน เป็นคำชนิดใด",
+    "choices": [
+      "คำสันธาน",
+      "คำอุทาน",
+      "คำกริยา",
+      "คำบุพบท"
+    ],
+    "answer": "คำบุพบท",
+    "explanation": "จาก แสดงจุดเริ่มต้นของการเดินทาง",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-020",
+    "category": "parts-of-speech",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำว่า เพราะ เป็นคำชนิดใดในประโยค ฉันยิ้มเพราะดีใจ",
+    "choices": [
+      "คำอุทาน",
+      "คำสรรพนาม",
+      "คำสันธาน",
+      "คำนาม"
+    ],
+    "answer": "คำสันธาน",
+    "explanation": "เพราะ เชื่อมเหตุผลกับข้อความ",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-021",
+    "category": "parts-of-speech",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า อุ๊ย เป็นคำชนิดใด",
+    "choices": [
+      "คำนาม",
+      "คำอุทาน",
+      "คำกริยา",
+      "คำบุพบท"
+    ],
+    "answer": "คำอุทาน",
+    "explanation": "อุ๊ย ใช้แสดงความตกใจหรือประหลาดใจ",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-022",
+    "category": "parts-of-speech",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "ข้อใดเป็นคำนามทั้งหมด",
+    "choices": [
+      "แมว บ้าน โรงเรียน",
+      "กิน วิ่ง นอน",
+      "ฉัน เธอ เขา",
+      "เร็ว ช้า สวย"
+    ],
+    "answer": "แมว บ้าน โรงเรียน",
+    "explanation": "แมว บ้าน โรงเรียน เป็นชื่อคน สัตว์ สิ่งของ หรือสถานที่",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-023",
+    "category": "parts-of-speech",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "ข้อใดเป็นคำกริยาทั้งหมด",
+    "choices": [
+      "โต๊ะ เก้าอี้ บ้าน",
+      "สวย เร็ว ช้า",
+      "เขา ฉัน เรา",
+      "กิน อ่าน เขียน"
+    ],
+    "answer": "กิน อ่าน เขียน",
+    "explanation": "กิน อ่าน เขียน บอกการกระทำ",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-024",
+    "category": "parts-of-speech",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "ข้อใดเป็นคำสรรพนามทั้งหมด",
+    "choices": [
+      "วิ่ง กิน นอน",
+      "และ แต่ หรือ",
+      "ฉัน เธอ เขา",
+      "บ้าน โรงเรียน แมว"
+    ],
+    "answer": "ฉัน เธอ เขา",
+    "explanation": "ฉัน เธอ เขา ใช้แทนชื่อบุคคล",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-025",
+    "category": "parts-of-speech",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "ข้อใดเป็นคำสันธานทั้งหมด",
+    "choices": [
+      "วิ่ง เดิน นอน",
+      "และ แต่ หรือ",
+      "บน ใต้ ใน",
+      "ฉัน เธอ เขา"
+    ],
+    "answer": "และ แต่ หรือ",
+    "explanation": "และ แต่ หรือ ใช้เชื่อมคำหรือประโยค",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-026",
+    "category": "parts-of-speech",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "คำว่า ระหว่าง ในประโยค นั่งระหว่างเพื่อน เป็นคำชนิดใด",
+    "choices": [
+      "คำบุพบท",
+      "คำอุทาน",
+      "คำสรรพนาม",
+      "คำกริยา"
+    ],
+    "answer": "คำบุพบท",
+    "explanation": "ระหว่าง แสดงความสัมพันธ์ของตำแหน่ง",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-027",
+    "category": "parts-of-speech",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำว่า ขยัน ในประโยค เด็กขยันอ่านหนังสือ เป็นคำชนิดใด",
+    "choices": [
+      "คำสันธาน",
+      "คำบุพบท",
+      "คำอุทาน",
+      "คำวิเศษณ์"
+    ],
+    "answer": "คำวิเศษณ์",
+    "explanation": "ขยัน บอกลักษณะของเด็ก จึงเป็นคำวิเศษณ์",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-028",
+    "category": "parts-of-speech",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำว่า เอ๊ะ เป็นคำชนิดใด",
+    "choices": [
+      "คำอุทาน",
+      "คำนาม",
+      "คำสรรพนาม",
+      "คำกริยา"
+    ],
+    "answer": "คำอุทาน",
+    "explanation": "เอ๊ะ ใช้แสดงความสงสัยหรือแปลกใจ",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-029",
+    "category": "parts-of-speech",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "คำว่า ด้วย ในประโยค เขาไปด้วยรถเมล์ เป็นคำชนิดใด",
+    "choices": [
+      "คำสันธาน",
+      "คำบุพบท",
+      "คำอุทาน",
+      "คำกริยา"
+    ],
+    "answer": "คำบุพบท",
+    "explanation": "ด้วย เชื่อมความสัมพันธ์เรื่องวิธีเดินทาง",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-030",
+    "category": "parts-of-speech",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "คำว่า มาก ในประโยค ฉันชอบเธอมาก ขยายคำใด",
+    "choices": [
+      "เธอ",
+      "ฉัน",
+      "ชอบ",
+      "ไม่มีคำใด"
+    ],
+    "answer": "ชอบ",
+    "explanation": "มาก ขยายระดับของคำกริยา ชอบ",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-031",
+    "category": "parts-of-speech",
+    "difficulty": 1,
+    "type": "fill-blank",
+    "question": "เติมคำ: ในประโยค “นกบิน” คำว่า “บิน” เป็นคำ_____",
+    "choices": [
+      "สรรพนาม",
+      "วิเศษณ์",
+      "นาม",
+      "กริยา"
+    ],
+    "answer": "กริยา",
+    "explanation": "บิน แสดงอาการของนก จึงเป็นคำกริยา",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-032",
+    "category": "parts-of-speech",
+    "difficulty": 2,
+    "type": "matching",
+    "question": "จับคู่คำกับชนิดของคำ",
+    "choices": [
+      "วิ่ง–คำกริยา",
+      "สวย–คำกริยา",
+      "ฉัน–คำกริยา",
+      "โรงเรียน–คำกริยา"
+    ],
+    "answer": "วิ่ง–คำกริยา",
+    "explanation": "วิ่ง แสดงอาการ จึงเป็นคำกริยา",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "parts-of-speech-033",
+    "category": "parts-of-speech",
+    "difficulty": 2,
+    "type": "order",
+    "question": "เรียงคำให้เป็นประโยคที่สมบูรณ์",
+    "choices": [
+      "เด็ก ๆ",
+      "ปลูก",
+      "ต้นไม้"
+    ],
+    "answer": "เด็ก ๆ|ปลูก|ต้นไม้",
+    "explanation": "เรียงเป็น “เด็ก ๆ ปลูกต้นไม้” โดยมีประธาน กริยา และกรรม",
+    "tags": [
+      "parts-of-speech",
+      "ป4",
+      "ป5"
+    ]
+  }
+]

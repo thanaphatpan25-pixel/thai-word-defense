@@ -1,0 +1,660 @@
+[
+  {
+    "id": "clusters-001",
+    "category": "clusters",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำใดมีคำควบกล้ำแท้",
+    "choices": [
+      "ตลาด",
+      "อร่อย",
+      "กล้วย",
+      "ขนม"
+    ],
+    "answer": "กล้วย",
+    "explanation": "กล้วย มี ก และ ล ออกเสียงควบกัน",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-002",
+    "category": "clusters",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำใดมีคำควบกล้ำแท้",
+    "choices": [
+      "ครู",
+      "ทราย",
+      "จริง",
+      "สร้าง"
+    ],
+    "answer": "ครู",
+    "explanation": "ครู มี ค และ ร ควบกล้ำกัน",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-003",
+    "category": "clusters",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำใดมีคำควบกล้ำแท้",
+    "choices": [
+      "ขนม",
+      "จมูก",
+      "ถนน",
+      "กวาง"
+    ],
+    "answer": "กวาง",
+    "explanation": "กวาง มี ก และ ว ควบกล้ำกัน",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-004",
+    "category": "clusters",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำใดมีคำควบกล้ำแท้",
+    "choices": [
+      "สบาย",
+      "ขยาย",
+      "ปลา",
+      "ตลาด"
+    ],
+    "answer": "ปลา",
+    "explanation": "ปลา มี ป และ ล ควบกล้ำกัน",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-005",
+    "category": "clusters",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำใดมีคำควบกล้ำแท้",
+    "choices": [
+      "สร้าง",
+      "พริก",
+      "จริง",
+      "ทราบ"
+    ],
+    "answer": "พริก",
+    "explanation": "พริก มี พ และ ร ควบกล้ำกัน",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-006",
+    "category": "clusters",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำใดมีคำควบกล้ำแท้",
+    "choices": [
+      "ขวาน",
+      "ขนม",
+      "สนาม",
+      "ฉลาด"
+    ],
+    "answer": "ขวาน",
+    "explanation": "ขวาน มี ข และ ว ควบกล้ำกัน",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-007",
+    "category": "clusters",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำใดมีคำควบกล้ำแท้",
+    "choices": [
+      "จมูก",
+      "ตลาด",
+      "ขนุน",
+      "แปรง"
+    ],
+    "answer": "แปรง",
+    "explanation": "แปรง มี ป และ ร ควบกล้ำกัน",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-008",
+    "category": "clusters",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำใดมีคำควบกล้ำแท้",
+    "choices": [
+      "กราบ",
+      "ขนม",
+      "อร่อย",
+      "สบาย"
+    ],
+    "answer": "กราบ",
+    "explanation": "กราบ มี ก และ ร ควบกล้ำกัน",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-009",
+    "category": "clusters",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำใดมีคำควบกล้ำแท้",
+    "choices": [
+      "ถนน",
+      "ปลูก",
+      "ตลาด",
+      "ฉลาด"
+    ],
+    "answer": "ปลูก",
+    "explanation": "ปลูก มี ป และ ล ควบกล้ำกัน",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-010",
+    "category": "clusters",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำใดมีคำควบกล้ำแท้",
+    "choices": [
+      "ทราย",
+      "จริง",
+      "ควาย",
+      "สระ"
+    ],
+    "answer": "ควาย",
+    "explanation": "ควาย มี ค และ ว ควบกล้ำกัน",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-011",
+    "category": "clusters",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำใดเป็นคำควบกล้ำไม่แท้",
+    "choices": [
+      "ครู",
+      "กวาง",
+      "กล้วย",
+      "ทราย"
+    ],
+    "answer": "ทราย",
+    "explanation": "ทร ในคำว่า ทราย ออกเสียงเป็น ซ ไม่ออกเสียงควบ ร",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-012",
+    "category": "clusters",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำใดเป็นคำควบกล้ำไม่แท้",
+    "choices": [
+      "จริง",
+      "แปรง",
+      "ขวาน",
+      "ปรุง"
+    ],
+    "answer": "จริง",
+    "explanation": "จริง ออกเสียง จิง ไม่ออกเสียง ร ควบ",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-013",
+    "category": "clusters",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำใดเป็นคำควบกล้ำไม่แท้",
+    "choices": [
+      "กราบ",
+      "สร้าง",
+      "พริก",
+      "ปลา"
+    ],
+    "answer": "สร้าง",
+    "explanation": "สร้าง ออกเสียง ส้าง ไม่ออกเสียง ร ควบ",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-014",
+    "category": "clusters",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำใดมีอักษรนำ",
+    "choices": [
+      "กวาง",
+      "กล้วย",
+      "หนู",
+      "ปลา"
+    ],
+    "answer": "หนู",
+    "explanation": "ห นำ น ทำให้เสียงวรรณยุกต์เป็นไปตามอักษรสูง",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-015",
+    "category": "clusters",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำใดมีอักษรนำ",
+    "choices": [
+      "แปรง",
+      "ขวาน",
+      "ครู",
+      "หมา"
+    ],
+    "answer": "หมา",
+    "explanation": "ห นำ ม เป็นอักษรนำ",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-016",
+    "category": "clusters",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำใดมีอักษรนำ",
+    "choices": [
+      "หญิง",
+      "กลัว",
+      "ปรุง",
+      "กวาง"
+    ],
+    "answer": "หญิง",
+    "explanation": "ห นำ ญ เป็นอักษรนำ",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-017",
+    "category": "clusters",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำใดมีอักษรนำ",
+    "choices": [
+      "พริก",
+      "กลอง",
+      "หยุด",
+      "ปลา"
+    ],
+    "answer": "หยุด",
+    "explanation": "ห นำ ย เป็นอักษรนำ",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-018",
+    "category": "clusters",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำใดมีอักษรนำ",
+    "choices": [
+      "หลาน",
+      "ควาย",
+      "กราบ",
+      "แปรง"
+    ],
+    "answer": "หลาน",
+    "explanation": "ห นำ ล เป็นอักษรนำ",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-019",
+    "category": "clusters",
+    "difficulty": 1,
+    "type": "multiple-choice",
+    "question": "คำใดมีอักษรนำ",
+    "choices": [
+      "ปลูก",
+      "กวาง",
+      "ครู",
+      "หวาน"
+    ],
+    "answer": "หวาน",
+    "explanation": "ห นำ ว เป็นอักษรนำ",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-020",
+    "category": "clusters",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำใดมีอักษรนำ",
+    "choices": [
+      "พริก",
+      "ปรุง",
+      "ขนม",
+      "กล้วย"
+    ],
+    "answer": "ขนม",
+    "explanation": "ข นำ น ในคำว่า ขนม",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-021",
+    "category": "clusters",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำใดมีอักษรนำ",
+    "choices": [
+      "แปรง",
+      "สนาม",
+      "กวาง",
+      "ปลา"
+    ],
+    "answer": "สนาม",
+    "explanation": "ส นำ น ในคำว่า สนาม",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-022",
+    "category": "clusters",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำใดมีอักษรนำ",
+    "choices": [
+      "ตลาด",
+      "ครู",
+      "ขวาน",
+      "ปลูก"
+    ],
+    "answer": "ตลาด",
+    "explanation": "ต นำ ล ในคำว่า ตลาด",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-023",
+    "category": "clusters",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำใดมีอักษรนำ",
+    "choices": [
+      "กราบ",
+      "พริก",
+      "กลัว",
+      "จมูก"
+    ],
+    "answer": "จมูก",
+    "explanation": "จ นำ ม ในคำว่า จมูก",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-024",
+    "category": "clusters",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำใดเป็นคำที่มี อย นำ",
+    "choices": [
+      "หนู",
+      "ทราย",
+      "อย่า",
+      "กล้วย"
+    ],
+    "answer": "อย่า",
+    "explanation": "อย่า เป็นหนึ่งในคำที่ใช้ อ นำ ย",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-025",
+    "category": "clusters",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "ข้อใดเป็นกลุ่มคำที่ใช้ อ นำ ย",
+    "choices": [
+      "จริง สร้าง ทราย ทราบ",
+      "อย่า อยู่ อย่าง อยาก",
+      "หนู หมา หญิง หยุด",
+      "กล้วย กลัว กวาง กวาด"
+    ],
+    "answer": "อย่า อยู่ อย่าง อยาก",
+    "explanation": "คำที่ใช้ อ นำ ย มี 4 คำที่พบบ่อย ได้แก่ อย่า อยู่ อย่าง อยาก",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-026",
+    "category": "clusters",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำว่า กล้วย เป็นคำชนิดใดในเรื่องคำควบกล้ำ",
+    "choices": [
+      "คำควบกล้ำแท้",
+      "อักษรนำ",
+      "คำควบกล้ำไม่แท้",
+      "คำประสม"
+    ],
+    "answer": "คำควบกล้ำแท้",
+    "explanation": "กล้วย มี ก และ ล ออกเสียงควบกัน",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-027",
+    "category": "clusters",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำว่า ทราบ อ่านออกเสียงอย่างไร",
+    "choices": [
+      "ทราบ",
+      "ตะ-ราบ",
+      "สะ-ราบ",
+      "ซาบ"
+    ],
+    "answer": "ซาบ",
+    "explanation": "ทร ในคำว่า ทราบ ออกเสียงเป็น ซ",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-028",
+    "category": "clusters",
+    "difficulty": 2,
+    "type": "multiple-choice",
+    "question": "คำว่า ขยาย มีลักษณะเด่นอย่างไร",
+    "choices": [
+      "ข นำ ย",
+      "คำควบกล้ำ ปล",
+      "ทร ควบกล้ำ",
+      "คำควบกล้ำ กร"
+    ],
+    "answer": "ข นำ ย",
+    "explanation": "ขยาย เป็นอักษรนำ ข นำ ย",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-029",
+    "category": "clusters",
+    "difficulty": 3,
+    "type": "multiple-choice",
+    "question": "ข้อใดไม่ใช่คำควบกล้ำแท้",
+    "choices": [
+      "กวาง",
+      "ทรวดทรง",
+      "ครู",
+      "กล้า"
+    ],
+    "answer": "ทรวดทรง",
+    "explanation": "ทร ในคำว่า ทรวดทรง ไม่ออกเสียง ร ควบแบบคำควบกล้ำแท้",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-030",
+    "category": "clusters",
+    "difficulty": 1,
+    "type": "fill-blank",
+    "question": "เติมคำให้ถูกต้อง: เด็ก ๆ ช่วยกัน ___ ต้นไม้",
+    "choices": [
+      "ปะหลูก",
+      "ปะลูก",
+      "ปลูก",
+      "ปลูกร"
+    ],
+    "answer": "ปลูก",
+    "explanation": "ปลูก มี ป และ ล เป็นคำควบกล้ำแท้",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-031",
+    "category": "clusters",
+    "difficulty": 1,
+    "type": "true-false",
+    "question": "ข้อความ “กล้วย” มีคำควบกล้ำแท้ ถูกต้องหรือไม่",
+    "choices": [
+      "ถูก",
+      "ผิด"
+    ],
+    "answer": "ถูก",
+    "explanation": "กล้วย มี ก และ ล ควบกล้ำและออกเสียงทั้งสองพยัญชนะ",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-032",
+    "category": "clusters",
+    "difficulty": 2,
+    "type": "fill-blank",
+    "question": "เติมพยัญชนะควบในคำว่า “_____ู” ให้เป็นคำว่า “ครู”",
+    "choices": [
+      "คร",
+      "กล",
+      "กร",
+      "คล"
+    ],
+    "answer": "คร",
+    "explanation": "ครู ใช้ ค ควาย ควบกับ ร เรือ",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  },
+  {
+    "id": "clusters-033",
+    "category": "clusters",
+    "difficulty": 3,
+    "type": "matching",
+    "question": "จับคู่คำกับลักษณะของคำ",
+    "choices": [
+      "จริง–คำควบกล้ำแท้",
+      "ตลาด–คำควบกล้ำแท้",
+      "กล้วย–คำควบกล้ำแท้",
+      "ขนม–คำควบกล้ำแท้"
+    ],
+    "answer": "กล้วย–คำควบกล้ำแท้",
+    "explanation": "กล้วย ออกเสียง ก และ ล ควบกัน จึงเป็นคำควบกล้ำแท้",
+    "tags": [
+      "clusters",
+      "ป4",
+      "ป5"
+    ]
+  }
+]
