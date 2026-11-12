@@ -41,11 +41,11 @@ class MockAudioContext {
 test('background music starts after the player gesture and stops when sound is muted', () => {
   const originalWindow = globalThis.window;
   const context = new MockAudioContext();
-  let timerCallback: (() => void) | null = null;
+  const timerCallback: { current?: () => void } = {};
   let timerCleared = false;
   const fakeWindow = {
     AudioContext: class { constructor() { return context; } },
-    setInterval: (callback: () => void) => { timerCallback = callback; return 17; },
+    setInterval: (callback: () => void) => { timerCallback.current = callback; return 17; },
     clearInterval: (timerId: number) => { if (timerId === 17) timerCleared = true; },
   } as unknown as Window & typeof globalThis;
   globalThis.window = fakeWindow;
@@ -54,11 +54,10 @@ test('background music starts after the player gesture and stops when sound is m
     audio.startMusic();
     assert.equal(context.oscillators.length, 1);
     assert.equal(context.oscillators[0]?.started, true);
-    assert.equal(typeof timerCallback, 'function');
-    const scheduledNote = timerCallback;
+    assert.equal(typeof timerCallback.current, 'function');
     audio.setEnabled(false);
     assert.equal(timerCleared, true);
-    scheduledNote?.();
+    timerCallback.current?.();
     assert.equal(context.oscillators.length, 1, 'muted music must not schedule additional notes');
   } finally {
     globalThis.window = originalWindow;
