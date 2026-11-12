@@ -30,9 +30,8 @@
 
 ## ภาพและแอนิเมชัน
 
-- `src/assets/art/game-atlas.webp` + `game-atlas.json` รวมเฟรมป้อมและซอมบี้ 188 เฟรม
-- `battlefield.webp` เป็นฉาก 754×464 ที่ประกอบให้เส้นทางอิฐตรงกับ GridSystem 13×8 ช่อง
-- `school-library.webp` เป็นภาพฐานห้องสมุดที่สร้างขึ้นสำหรับเกม
+- `public/assets/art/game-atlas.webp` + `game-atlas.json` รวมเฟรมป้อมและซอมบี้ 188 เฟรม
+- `public/assets/art/battlefield.webp` เป็นฉากต้นฉบับ 377×232 ขยายแบบคมชัดเป็น 754×464 ให้ตรงกับ GridSystem 13×8 ช่อง โดยรวมอาคารห้องสมุดไว้ในฉากแล้ว
 - `src/assets/gameArt.ts` เป็น manifest แบบ TypeScript สำหรับ mapping ป้อม 6 แบบและซอมบี้ 7 บทบาท
 - ป้อมใช้ภาพ Idle/Upgrade; ซอมบี้มี Idle, Walk, Attack, Hurt และ Dead
 - แหล่งที่มาและข้อกำหนดการใช้ดูที่ [CREDITS.md](CREDITS.md)
