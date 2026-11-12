@@ -221,8 +221,8 @@ export class GameScene extends Phaser.Scene {
       const hurtKey = zombieAnimationKey(zombie.type, 'hurt');
       if (lastHp !== undefined && zombie.hp < lastHp && sprite.anims.currentAnim?.key !== hurtKey) {
         sprite.play(hurtKey);
-        sprite.once(Phaser.Animations.Events.ANIMATION_COMPLETE, (animation) => {
-          if (animation.key === hurtKey && sprite?.active) {
+        sprite.once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => {
+          if (sprite?.active) {
             sprite.play(zombieAnimationKey(zombie.type, 'walk'));
           }
         });
