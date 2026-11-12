@@ -10,10 +10,11 @@ export const GRID_PATH = [
   { x: 11, y: 2 }, { x: 12, y: 2 },
 ] as const;
 
-// Reserve a 2×2 footprint for the enlarged school-library landmark.
+// The single school landmark occupies a 3×3 footprint beneath the final path segment.
 export const SCHOOL_FOOTPRINT_CELLS = [
-  { x: 11, y: 3 }, { x: 12, y: 3 },
-  { x: 11, y: 4 }, { x: 12, y: 4 },
+  { x: 10, y: 3 }, { x: 11, y: 3 }, { x: 12, y: 3 },
+  { x: 10, y: 4 }, { x: 11, y: 4 }, { x: 12, y: 4 },
+  { x: 10, y: 5 }, { x: 11, y: 5 }, { x: 12, y: 5 },
 ] as const;
 
 const pathKeys = new Set(GRID_PATH.map((point) => `${point.x},${point.y}`));

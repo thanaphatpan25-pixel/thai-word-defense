@@ -1,6 +1,6 @@
 import type { ZombieType } from '../data/zombies';
 
-// Source dimensions are the actual frames in public/assets/art/game-atlas.webp.
+// Phaser keeps nearest-neighbour pixel scaling; these are the displayed source-frame sizes.
 export const ART_SOURCE_SIZE = {
   tower: { width: 18, height: 32 },
   zombie: { width: 18, height: 20 },
@@ -8,19 +8,20 @@ export const ART_SOURCE_SIZE = {
 } as const;
 
 export const RENDER_TUNING = {
-  towerScale: 2,
+  // Larger integer-like scales create a bolder, 64-bit-inspired presentation.
+  towerScale: 2.4,
   zombieScaleByType: {
-    normal: 2.7,
-    runner: 2.55,
-    tank: 3,
-    jumper: 2.7,
-    healer: 2.7,
-    splitter: 2.8,
-    boss: 3.2,
+    normal: 3,
+    runner: 2.85,
+    tank: 3.2,
+    jumper: 3,
+    healer: 3,
+    splitter: 3,
+    boss: 3.4,
   } satisfies Record<ZombieType, number>,
-  schoolScale: 1.15,
+  schoolScale: 1.65,
   zombieLabelFontPx: 12,
-  towerBadgeFontPx: 11,
+  towerBadgeFontPx: 12,
 } as const;
 
 export interface DisplaySize {

@@ -12,8 +12,8 @@ import { getZombieDisplaySize, RENDER_TUNING } from '../assets/renderTuning';
 
 const WORLD_WIDTH = GRID_COLUMNS * CELL_SIZE;
 const WORLD_HEIGHT = GRID_ROWS * CELL_SIZE;
-const SCHOOL_X = WORLD_WIDTH - 68;
-const SCHOOL_BASE_Y = 278;
+const SCHOOL_X = WORLD_WIDTH - 90;
+const SCHOOL_BASE_Y = 340;
 
 type TowerView = {
   container: Phaser.GameObjects.Container;
@@ -44,6 +44,8 @@ export class GameScene extends Phaser.Scene {
   }
 
   create(): void {
+    // Stop the menu canvas explicitly so its school icon cannot remain underneath the game scene.
+    if (this.scene.isActive('Menu')) this.scene.stop('Menu');
     this.cameras.main.setBackgroundColor('#82954d');
     this.cameras.main.setBounds(0, 0, WORLD_WIDTH, WORLD_HEIGHT);
     // The existing battlefield is 377×232; nearest-neighbour 2× keeps the route aligned to the grid.
@@ -64,7 +66,7 @@ export class GameScene extends Phaser.Scene {
     this.add
       .text(SCHOOL_X, SCHOOL_BASE_Y + 4, 'ห้องสมุด', {
         fontFamily: 'K2D, Tahoma, sans-serif',
-        fontSize: '12px',
+        fontSize: '13px',
         fontStyle: 'bold',
         color: '#fff4db',
         backgroundColor: '#263b32',

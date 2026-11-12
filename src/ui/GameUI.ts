@@ -63,7 +63,7 @@ export class GameUI {
           <section class="play-column">
             <div class="world-card">
               <div class="world-toolbar"><span class="world-tag">🏫 SCHOOL LAST STAND</span><span id="world-status" class="world-status">เตรียมพร้อม</span></div>
-              <div class="canvas-wrap"><div id="game-canvas"></div><div class="canvas-corner canvas-corner-left">PIXEL WORLD · 32 BIT</div><div class="canvas-corner canvas-corner-right">ปกป้องห้องสมุด!</div></div>
+              <div class="canvas-wrap"><div id="game-canvas"></div><div class="canvas-corner canvas-corner-left">PIXEL WORLD · 64-BIT STYLE</div><div class="canvas-corner canvas-corner-right">ปกป้องห้องสมุด!</div></div>
               <div class="world-footer"><span>🧟 ซอมบี้กำลังเดินตามเส้นทาง</span><span>แตะช่องว่างเพื่อวางป้อม</span></div>
             </div>
             <div id="quick-status" class="quick-status"></div>

@@ -1,6 +1,5 @@
 import Phaser from 'phaser';
 import { GRID_COLUMNS, GRID_ROWS, CELL_SIZE, GRID_PATH } from '../systems/GridSystem';
-import { ASSET_KEYS } from '../utils/PixelArtFactory';
 
 export class MenuScene extends Phaser.Scene {
   constructor() { super('Menu'); }
@@ -16,7 +15,7 @@ export class MenuScene extends Phaser.Scene {
         graphics.fillRect(x * CELL_SIZE, y * CELL_SIZE, CELL_SIZE - 1, CELL_SIZE - 1);
       }
     }
-    this.add.image(width - 46, 3 * CELL_SIZE + 29, ASSET_KEYS.school).setScale(0.72);
+    // Keep the menu map decorative only; the school landmark belongs to GameScene exactly once.
     this.add.text(width / 2, 30, 'WORD DEFENSE', { fontFamily: 'monospace', fontSize: '22px', color: '#ffdc75', fontStyle: 'bold' }).setOrigin(0.5);
     this.add.text(width / 2, height - 18, 'ปกป้องห้องสมุดด้วยพลังภาษาไทย!', { fontFamily: 'Tahoma, sans-serif', fontSize: '15px', color: '#fff4db', backgroundColor: '#18243b', padding: { x: 8, y: 5 } }).setOrigin(0.5);
   }

@@ -15,7 +15,7 @@ The supplied pack archives identify the CraftPix file-license page. The assets a
 ## Original project artwork
 
 - The 754×464 battlefield is composed from the selected Fields Tileset to align with the existing 13×8 gameplay route.
-- The school library building is an original pixel-art landmark created for this project and displayed at approximately 110×110px.
+- The school library landmark is rendered once in GameScene; the decorative menu no longer draws a second school structure.
 - Tower/enemy role mappings, animation registration, and in-game labels are project code.
 
 ## Fonts and audio
